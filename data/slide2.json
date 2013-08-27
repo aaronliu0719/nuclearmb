@@ -1,0 +1,56 @@
+{
+	"display": "slide2_rotator",
+	"slide_title": "核電好危險？",
+	"subjects": [
+		{
+			"subject_id": "rot1",
+			"subject_title": "輻射ABC",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-1.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url":"data/slide2_content1.html"
+		},
+		{
+			"subject_id": "rot2",
+			"subject_title": "廢核是世界主流？",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-2.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url": "data/slide2_content1.html"
+		},
+		{
+			"subject_id": "rot3",
+			"subject_title": "福島核災的始末與未來發展",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-3.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url": "data/slide2_content1.html"
+		},
+		{
+			"subject_id": "rot4",
+			"subject_title": "地震國不該發展核電？",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-4.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url": "data/slide2_content1.html"
+		},
+		{
+			"subject_id": "rot5",
+			"subject_title": "核電廠=輻射源？",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-1.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url": "data/slide2_content1.html"
+		},
+		{
+			"subject_id": "rot6",
+			"subject_title": "核廢料遺禍子孫？",
+			"subject_sub_title": "我是副標",
+			"subject_image": "slide2/slide2-2.jpg",
+			"subject_description": "一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零一二三四五六七八九零",
+            "subject_content_url": "data/slide2_content1.html"
+		}
+
+	]
+
+}

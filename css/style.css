@@ -1,0 +1,558 @@
+/* Global 作為每個slide的預設值 */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #8a8683;
+	background-color:#ffffff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #f68f67;
+	text-decoration: none;
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+a:visited {
+	color: #f68f67;
+	text-decoration: none;
+}
+
+
+
+
+/* Navigation 上方menu區 */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color:#ffffff;
+	z-index:10000;
+}
+
+#logo {
+	text-align: center;
+	margin: 18px 0;
+}
+#nav {
+	text-align: right;
+	margin: 20px 0 0 0;
+}
+.navigation{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+.navigation li{
+	display: inline-block;
+	text-align: left;
+	padding:5px 0 0 10px;
+	width: 120px;
+	color: #056087;
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: #057F87;
+}
+
+.navigation .active{
+	cursor:pointer;
+	color: #C24A4A;
+	font-weight:bold;
+}
+
+
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:100px 0;
+}
+
+.fuck_anti_nuke{
+	display: none;
+}
+
+/* Slide 1 首頁-核能流言終結者 */ 
+
+/* 頁面 */
+#slide1{
+	background-color:#ffffff;
+	color: #605187;
+}
+
+/* 頁面主標 */
+#slide1 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	font-weight: 700;
+	color:#056087;
+}
+
+
+/* 頁面副標 */
+#slide1 h2 {
+	font-size: 2em;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+	color: #057F87;
+}
+
+/* 網站連結 */
+#slide1 .site_link{
+	display: block;
+	vertical-align: middle;
+	line-height: 20px;
+	font-size: 20px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	color: #605187;
+}
+
+#slide1 .site_link:hover{
+	color: #956B96;
+}
+
+#slide1 .site_link img{
+	vertical-align: top;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+
+}
+
+/* 版權資訊 */
+#slide1 .license{
+	text-align: center;
+	font-size: 0.8em;
+}
+
+/* Slide 2  核電好危險？ */ 
+
+#slide2{
+	background-image:url('../images/slide2/nuke_bg.png');
+	background-color:#f68f67;
+	color:#ffffff;
+}
+#slide2 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#944500;
+	font-weight: 500;
+}
+
+#slide2 h1.subject{
+	font-size: 2em;
+	letter-spacing: -2px;
+	line-height: 0px;
+	color:#FFCC33;
+	font-weight: 200;
+}
+
+
+#slide2 h2 {
+	font-size: 1.5em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 400;
+}
+
+
+/* Slide 3 */ 
+#slide3{
+	background-image:url('../images/slide3/green_bg.jpg');
+	background-color:#99ffcc;
+	background-position: left bottom; 
+	background-size: 100%;
+	background-attachment: fixed;
+	color:#f0f0f0;
+}
+
+#slide3 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 4px;
+	color:#ffffff;
+	font-weight: 500;
+}
+
+#slide3 h2 {
+	font-size: 2em;
+	letter-spacing: -2px;
+	color:#FFCC33;
+	font-weight: 200;
+	padding: 0;
+	margin: 20px 0 0 0;
+	border: none;
+}
+
+#slide3 .answer{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	color:#f0f0f0;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+/* Slide 4 */
+#slide4{
+	background-image:url('../images/slide2/nuke_bg.png');
+	background-color:#f68f67;
+	color:#ffffff;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#944500;
+	font-weight: 500;
+}
+
+#slide4 h1.subject{
+	font-size: 2em;
+	letter-spacing: -2px;
+	line-height: 0px;
+	color:#FFCC33;
+	font-weight: 200;
+}
+
+
+#slide4 h2 {
+	font-size: 1.5em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 400;
+}
+
+/* Slide 5 */
+#slide5{
+	background-image:url('../images/slide3/green_bg.jpg');
+	background-color:#99ffcc;
+	background-position: left bottom; 
+	background-size: 100%;
+	background-attachment: fixed;
+	color:#f0f0f0;
+}
+
+#slide5 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 4px;
+	color:#ffffff;
+	font-weight: 500;
+}
+
+#slide5 h2 {
+	font-size: 2em;
+	letter-spacing: -2px;
+	color:#FFCC33;
+	font-weight: 200;
+	padding: 0;
+	margin: 20px 0 0 0;
+	border: none;
+}
+
+#slide5 .answer{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	color:#f0f0f0;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+/* Slide 6 */
+#slide6{
+	background-image:url('../images/slide2/nuke_bg.png');
+	background-color:#f68f67;
+	color:#ffffff;
+}
+#slide6 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#944500;
+	font-weight: 500;
+}
+
+#slide6 h1.subject{
+	font-size: 2em;
+	letter-spacing: -2px;
+	line-height: 0px;
+	color:#FFCC33;
+	font-weight: 200;
+}
+
+
+#slide6 h2 {
+	font-size: 1.5em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 400;
+}
+
+
+/* Slide 8 */ 
+
+#slide8{
+	background-color:#ffffff;
+}
+#slide8 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#553775;
+	font-weight: 500;
+}
+#slide8 h2 {
+	font-size: 2em;
+	color: #744C9E;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+#slide8 a#grid_link{
+	background-color:#056087;
+	color:#F7FABE;
+	text-align:center;
+	font-size: 2em;
+	font-weight: 200;
+	margin: 5px;
+	display: block;
+}
+
+#slide8 a#grid_link:hover{
+	background-color:#057F87;
+}
+
+
+
+
+/* Slide 9 */
+
+#slide9{
+	background-image:url('../images/sunglasses.png');
+	background-color:#8a8683;
+	color:#ffffff;
+}
+#slide9 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide9 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide9 .site_link{
+	display: block;
+	vertical-align: middle;
+	line-height: 20px;
+	font-size: 20px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	color: #333399;
+}
+
+#slide9 .site_link:hover{
+	color: #FF9933;
+}
+
+#slide9 .site_link img{
+	vertical-align: top;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+
+}
+
+/* 文章內文 */
+.detail_content{
+	border-color: #fff9df; 
+}
+
+.detail_question
+{
+	font-size: 1.5 em;
+	color: #50ba37;
+}
+
+.detail_answer
+{
+	font-size: 2em;
+	color: #003399;
+	font-weight: 200;
+}
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+	padding:0;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+
+}
+
+
+
+
