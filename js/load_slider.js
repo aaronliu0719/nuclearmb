@@ -23,7 +23,9 @@ function init_slider(){
         }
 
         var slideTitle = getSlideTitle(dataslide);
-        History.pushState({slide:dataslide, subject:0}, slideTitle, encodeURIComponent(slideTitle));
+
+        var new_route = config.base_url+"/"+encodeURIComponent(slideTitle);
+        History.pushState({slide:dataslide, subject:0}, slideTitle, new_route);
         window.current_slide = dataslide;
 
     });
@@ -37,7 +39,29 @@ function init_slider(){
         }
     });
 
-    function goToByScroll(dataslide) {
+    function goToSubject(subject_id, open_detail){
+        console.log("goToSubject:" + subject_id);
+
+        var slide_id = "slide"+window.current_slide;
+
+        
+
+        console.log($("#"+slide_id+ " li").eq(subject_id-1));
+
+        var subject_li = $("#"+slide_id+ " li").eq(subject_id-1);
+
+        if(subject_li.length>0)
+        {
+            subject_li.click();
+            if(open_detail)
+            {
+                subject_li.find("a#more").click();
+            }
+            
+        }
+    }
+
+    function goToByScroll(dataslide, subject_id, open_detail) {
         var top = $('.slide[data-slide="' + dataslide + '"]').offset().top;
 
         if(window.current_slide<dataslide){
@@ -53,14 +77,22 @@ function init_slider(){
         
         //console.log('route');
         //NMB.router.navigate("slide1"); 
-        
 
-        htmlbody.animate({
-            scrollTop: top
-        }, 1000, 'easeInOutQuint');
+        var scroll_speed = 1000;
         
-
-      
+        if(subject_id==undefined){
+            htmlbody.animate({
+                scrollTop: top
+            }, scroll_speed, 'easeInOutQuint');
+        }else{
+            htmlbody.animate({
+                scrollTop: top
+            }, scroll_speed, 'easeInOutQuint', (function (sub_id, to_open) {
+                return function() {
+                    goToSubject(sub_id, to_open);
+                }
+            })(subject_id, open_detail));
+        }
     }
 
     
@@ -103,9 +135,14 @@ function init_content_slider(){
         display($(this));
         e.preventDefault();
 
-        //TODO: 加上subject的history
-        console.log('li.eq='+$(this).eq(0));
-        //History.pushState({slide:dataslide, subject:0}, slideTitle, encodeURIComponent(slideTitle));
+        var subject_id = $(this).attr("subject");
+        var subject_title = $(this).find("a.info_menu").text();
+        var slideTitle = getSlideTitle(window.current_slide);
+
+        console.log(slideTitle+"/"+subject_title);
+        //加上subject
+        var new_route = config.base_url+"/"+encodeURIComponent(slideTitle)+"/"+encodeURIComponent(subject_title);
+        History.pushState({slide:dataslide, subject:subject_id}, subject_title, new_route);
     });
 
     

@@ -9,6 +9,7 @@
 	<meta name="description" content="核能流言終結者 - 理性思考核能，破除誇大恐懼" />
     <meta name="keywords" content="核能,核四,核電,台電,反核,擁核,劉黎兒,方儉,媽媽監督核電廠聯盟,綠色公民行動聯盟,反核部隊,綠色消費者基金會,爸爸非核陣線"/>
 	<title>核能流言終結者</title>
+	<link rel="shortcut icon" href="favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
@@ -17,10 +18,7 @@
 	<link rel="stylesheet" href="js/lib/fancybox2/jquery.fancybox.css?v=2.1.5" type="text/css"  media="screen" />
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-
 </head>
-
 <body>
 
 	<div class="menu">
@@ -219,13 +217,13 @@
             <ul id="rotmenu" >
             	{{#each subjects}}
                 	<li display="{{../display}}" subject="{{subject_id}}">
-                        <a href="{{subject_id}}">{{subject_title}}</a>
+                        <a class="info_menu" href="{{subject_id}}">{{subject_title}}</a>
                         <div style="display:none;">
                             <div class="info_image">{{subject_image}}</div>
                             <div class="info_heading">{{subject_sub_title}}</div>
                             <div class="info_description">
                             	{{subject_description}}...
-                                <a class="more fancybox fancybox.ajax" href="{{subject_content_url}}">Read more</a>
+                                <a id="more" class="more fancybox fancybox.ajax" href="{{subject_content_url}}">Read more</a>
                             </div>
                         </div>
                     </li>
