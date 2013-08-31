@@ -39,7 +39,7 @@ function init_location(){
 
     if(url.length>base_url.length)
     {
-        path = url.substring(base_url.length+1, url.length)
+        path = url.substring(base_url.length, url.length)
     }
     console.log("path="+path);
 

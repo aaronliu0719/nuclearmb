@@ -10,6 +10,8 @@ function MyRouter(){
 	{
 		var is_mached = false;
 
+		console.log('navigate path='+path);
+
 		if(this.routingTable[path]!==undefined){
 			this.routingTable[path]();
 			console.log('E1');	
@@ -30,7 +32,7 @@ function MyRouter(){
 
 }
 
-var router = NULL;
+var router = null;
 
 function init_router(){
 	router = new MyRouter();
