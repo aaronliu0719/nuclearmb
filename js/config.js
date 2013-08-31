@@ -1,2 +1,2 @@
 var config = {};
-config.base_url = "/gogonuke";
+config.base_url = "/nuclearmb";

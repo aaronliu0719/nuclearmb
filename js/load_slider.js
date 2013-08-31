@@ -112,7 +112,7 @@ function init_content_slider(){
     
     function display(elem){
         var $this   = elem;
-        console.dir(elem);
+        
         var display_target = elem.attr('display');
 
         console.log('display_target='+display_target);
