@@ -1,9 +1,10 @@
 {
+	"slide_id": 6,
 	"display": "slide6_rotator",
 	"slide_title": "能源與經濟發展",
 	"subjects": [
 		{
-			"subject_id": "rot1",
+			"subject_id": "1",
 			"subject_title": "現在能停建核四嗎？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-1.jpg",
@@ -11,7 +12,7 @@
             "subject_content_url":"data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot2",
+			"subject_id": "2",
 			"subject_title": "迫在眉睫的能源危機",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-2.jpg",
@@ -19,7 +20,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot3",
+			"subject_id": "3",
 			"subject_title": "核能未來的發展",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-3.jpg",
@@ -27,7 +28,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot4",
+			"subject_id": "4",
 			"subject_title": "世界用電的趨勢",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-4.jpg",
@@ -35,7 +36,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot5",
+			"subject_id": "5",
 			"subject_title": "能源與環境",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-1.jpg",
@@ -43,7 +44,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot6",
+			"subject_id": "6",
 			"subject_title": "臺灣最佳的能源組合",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-2.jpg",

@@ -39,16 +39,14 @@ function init_slider(){
         }
     });
 
-    function goToSubject(subject_id, open_detail){
-        console.log("goToSubject:" + subject_id);
 
-        var slide_id = "slide"+window.current_slide;
 
-        
+    function goToSubject(dataslide, subject_id, open_detail){
+        console.log("goToSubject:" + dataslide+'/'+subject_id+"/"+open_detail);
 
-        console.log($("#"+slide_id+ " li").eq(subject_id-1));
-
-        var subject_li = $("#"+slide_id+ " li").eq(subject_id-1);
+        var subject_li = $("#slide"+dataslide+ " li").eq(subject_id-1);
+        console.log("#slide"+dataslide+ " li");
+        console.log(subject_li);
 
         if(subject_li.length>0)
         {
@@ -87,11 +85,11 @@ function init_slider(){
         }else{
             htmlbody.animate({
                 scrollTop: top
-            }, scroll_speed, 'easeInOutQuint', (function (sub_id, to_open) {
+            }, scroll_speed, 'easeInOutQuint', (function (dataslide, subject_id, open_detail) {
                 return function() {
-                    goToSubject(sub_id, to_open);
+                    goToSubject(dataslide, subject_id, open_detail);
                 }
-            })(subject_id, open_detail));
+            })(dataslide, subject_id, open_detail));
         }
     }
 
@@ -141,7 +139,7 @@ function init_content_slider(){
 
         console.log(slideTitle+"/"+subject_title);
         //加上subject
-        var new_route = config.base_url+"/"+encodeURIComponent(slideTitle)+"/"+encodeURIComponent(subject_title);
+        var new_route = config.base_url+"/"+encodeURIComponent(slideTitle)+"#"+encodeURIComponent(subject_title);
         History.pushState({slide:dataslide, subject:subject_id}, subject_title, new_route);
     });
 

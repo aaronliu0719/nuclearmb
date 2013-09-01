@@ -15,12 +15,22 @@ function getURLParameter(sParam)
     return null;
 }
 
+function more_click(obj, dataslide, subject_id, subject_title){
 
-function getSlideTitle(slide_no){
+    var slide_title = getSlideTitle(dataslide);
     
-    var title = $('.navigation li[data-slide="'+slide_no+'"]').text();
-    
+    console.log(slide_title);
+    console.log(subject_title);
 
+    var new_route = config.base_url+"/"+encodeURIComponent(slide_title)+"#"+encodeURIComponent(subject_title)+"#detail";
+    History.pushState({slide:dataslide, subject:subject_id}, subject_title, new_route);
+
+    
+}
+
+function getSlideTitle(slide_id){
+    
+    var title = $('.navigation li[data-slide="'+slide_id+'"]').text();
     return title;
 
 }
@@ -79,8 +89,12 @@ $(document).ready(function ($) {
         {
             width:'80%',
             height: '80%',
-
+            afterClose: function() {
+                History.back();
+            }
         }
     );
+
+
 
 });

@@ -1,9 +1,10 @@
 {
+	"slide_id": 4,
 	"display": "slide4_rotator",
 	"slide_title": "節電就夠用？",
 	"subjects": [
 		{
-			"subject_id": "rot1",
+			"subject_id": "1",
 			"subject_title": "立即廢核也沒關係？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-1.jpg",
@@ -11,7 +12,7 @@
             "subject_content_url":"data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot2",
+			"subject_id": "2",
 			"subject_title": "低價工業電費導致浪費？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-2.jpg",
@@ -19,7 +20,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot3",
+			"subject_id": "3",
 			"subject_title": "節能科技降低電力需求？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-3.jpg",
@@ -27,7 +28,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot4",
+			"subject_id": "4",
 			"subject_title": "用電零成長不用蓋電廠？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-4.jpg",
@@ -35,7 +36,7 @@
             "subject_content_url": "data/slide2_content1.html"
 		},
 		{
-			"subject_id": "rot5",
+			"subject_id": "5",
 			"subject_title": "產業升級就不用電？",
 			"subject_sub_title": "我是副標",
 			"subject_image": "slide2/slide2-1.jpg",

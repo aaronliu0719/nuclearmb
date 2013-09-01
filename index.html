@@ -214,16 +214,17 @@
 		<h1>{{slide_title}}</h1>
 		<div id="content" class="grid_12">
 		<div class="rotator">
-            <ul id="rotmenu" >
+            <ul id="rotmenu"  >
             	{{#each subjects}}
-                	<li display="{{../display}}" subject="{{subject_id}}">
+                	<li class="rotmenu_item" display="{{../display}}" subject="subject_{{subject_id}}">
                         <a class="info_menu" href="{{subject_id}}">{{subject_title}}</a>
                         <div style="display:none;">
                             <div class="info_image">{{subject_image}}</div>
                             <div class="info_heading">{{subject_sub_title}}</div>
                             <div class="info_description">
                             	{{subject_description}}...
-                                <a id="more" class="more fancybox fancybox.ajax" href="{{subject_content_url}}">Read more</a>
+                                <a id="more" class="more fancybox fancybox.ajax" 
+                                	href="{{subject_content_url}}" onclick="more_click(this, '{{../slide_id}}', '{{subject_id}}', '{{subject_title}}')">Read more</a>
                             </div>
                         </div>
                     </li>
@@ -265,8 +266,11 @@
 	<script type="text/javascript" src="js/config.js"></script>
 	<script type="text/javascript" src="js/router.js"></script>
 	<script type="text/javascript" src="js/history.js"></script>
-	<script type="text/javascript" src="js/load_slider.js"></script>
+
 	<script type="text/javascript" src="js/load_content.js"></script>
+	<script type="text/javascript" src="js/load_slider.js"></script>
+	
+
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
