@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/slider_style.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="js/lib/fancybox2/jquery.fancybox.css?v=2.1.5" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="css/win8.css" type="text/css"  media="screen" />
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -105,9 +106,8 @@
 				
 			</div>
 			<div class="license grid_12">
-				<a rel="license" href="http://creativecommons.org/licenses/by/3.0/tw/deed.en_US">
-					<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/tw/88x31.png" /></a><br />
-					<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">nuclearmb.org</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.facebook.com/NuclearMythbusters" property="cc:attributionName" rel="cc:attributionURL">核能流言終結者</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/tw/deed.en_US">Creative Commons Attribution 3.0 Taiwan License</a>.
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/tw/88x31.png" /></a><br />
+				本網站採用 <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.en_US">創用CC 姓名標示-相同方式分享 3.0 台灣</a> 授權條款 | 核能流言終結者
 			</div>
 			
 		</div>
@@ -118,13 +118,12 @@
 
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div id="slide2_container" class="container clearfix">
-			
+
 		</div>
 	</div>
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div id="slide3_container" class="container clearfix">
 		</div>
-		<br/><br/><br/><br/><br/>
 	</div>
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 		<div id="slide4_container" class="container clearfix">
@@ -225,13 +224,23 @@
 						<img src="images/blogger.png" />核能流言終結者部落格：最信實的核能科普資訊
 					</a> 
 				</p>
-				<div style="height: 200px"></div>
+				
+			</div>
+			<div  class="grid_12" style="height: 100px"></div>
+			<div  class="grid_12" style="height: 100px">
+				<div style="text-align:center; font-size:0.5em">
+					授權內容索引<br/>
+					<a target="_blank" href="http://zh.wikipedia.org/wiki/File:Nuclear_Power_Plant_Cattenom.jpg">Nuclear Power Plant Cattenom</a><br/>
+					<a target="_blank" href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:GreenMountainWindFarm_Fluvanna_2004.jpg">Green Mountain Wind Farm Fluvanna</a><br/>
+					<a target="_blank" href="http://www.flickr.com/photos/36197880@N03/5907145147/in/photolist-9ZZEs8-9ZZFgv-9ZZFVz-9ZZFpV-9Rhxzy-dUTqNn-ekvNpi-ekvNaZ-dVEoDR-dVEoE6-8t7rwv-8t7oRg-8t7mQt-8t7quF-8tnLkM-aSh7d4-8K8YZz-97rsdD-97rskv-97rseT-97uynS-97rsxM-8K8YYt-97rsbT-97rsje-97uygE-8Pc8Eg-dURghc-fdFYXt-fdWfDw-cwe6us-9zcsMr-8RqBqm-8RqB49-czPqp7-f1rM2m-a4ohRa-a4ohdz">Green Taipei Night View</a><br/>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script id="much-info-template" type="text/x-handlebars-template">
-		<h1>{{slide_title}}</h1>
+		
 		<div id="content" class="grid_12">
+		<h1>{{slide_title}}</h1>
 		<div class="rotator">
             <ul id="rotmenu"  >
             	{{#each subjects}}
@@ -258,11 +267,11 @@
                     <p></p>
                 </div>    
             </div>
-            <div style="height: 200px"></div>
         </div>
+        <div class="grid_12" style="height: 200px">&nbsp;</div>
 	</script>
 	<script id="mid-info-template" type="text/x-handlebars-template">
-		<div id="content" class="grid_12">
+		<div id="content" class="grid_9">
 			<h1>{{slide_title}}</h1>
 			{{#each subjects}}
 				<h2>{{subject_title}}</h2>
@@ -271,8 +280,10 @@
 					<a class="more fancybox fancybox.ajax" href="{{subject_content_url}}">Read more</a>
 				</div>
 			{{/each}}
-			<div style="height: 200px"></div>
 		</div>
+		<div id="content_blank" class="grid_3">&nbsp;
+		</div>
+		<div class="grid_12" style="height: 200px">&nbsp;</div>
 	</script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script>
@@ -281,7 +292,9 @@
 	<script type="text/javascript" src="js/lib/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/lib/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/lib/modernizr-1.5.min.js"></script>
 	<script type="text/javascript" src="js/lib/fancybox2/jquery.fancybox.js?v=2.1.5"></script>
+
 	<script type="text/javascript" src="js/config.js"></script>
 	<script type="text/javascript" src="js/router.js"></script>
 	<script type="text/javascript" src="js/history.js"></script>

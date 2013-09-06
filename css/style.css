@@ -11,15 +11,15 @@ img {
 	max-width: 100%;
 }
 a:link {
-	color: #f68f67;
+	color: #336699;
 	text-decoration: none;
 }
 a:hover {
-	color: #bde2df;
+	color: #3399CC;
 	text-decoration: none;
 }
 a:visited {
-	color: #f68f67;
+	color: #336699;
 	text-decoration: none;
 }
 
@@ -39,11 +39,11 @@ a:visited {
 
 #logo {
 	text-align: center;
-	margin: 18px 0;
+	margin: 10px 0 5px 0;
 }
 #nav {
 	text-align: right;
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 0;
 }
 .navigation{
 	float: right;
@@ -90,7 +90,7 @@ a:visited {
 /* 頁面 */
 #slide1{
 	background-color:#ffffff;
-	color: #605187;
+	color: #000000;
 }
 
 /* 頁面主標 */
@@ -117,15 +117,10 @@ a:visited {
 	display: block;
 	vertical-align: middle;
 	line-height: 20px;
-	font-size: 20px;
+	font-size: 0.9em;
 	margin: 0;
 	border: none;
 	padding: 0;
-	color: #605187;
-}
-
-#slide1 .site_link:hover{
-	color: #956B96;
 }
 
 #slide1 .site_link img{
@@ -140,15 +135,17 @@ a:visited {
 /* 版權資訊 */
 #slide1 .license{
 	text-align: center;
-	font-size: 0.8em;
-	margin-top: 50px;
+	font-size: 0.7em;
+	margin-top: 20px;
 }
 
 /* Slide 2  核電好危險？ */ 
 
 #slide2{
-	background-image:url('../images/slide2/nuke_bg.png');
-	background-color:#f68f67;
+	background-image:url('../images/slide2/nuke_bg.jpg');
+	background-position: left top; 
+	background-size: 100%;
+	background-attachment: fixed;
 	color:#ffffff;
 }
 #slide2 h1 {
@@ -180,11 +177,23 @@ a:visited {
 /* Slide 3 */ 
 #slide3{
 	background-image:url('../images/slide3/green_bg.jpg');
-	background-color:#99ffcc;
-	background-position: left bottom; 
+	background-position: left top; 
 	background-size: 100%;
 	background-attachment: fixed;
 	color:#f0f0f0;
+}
+
+#slide3_container #content{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	padding: 20px 20px 60px 20px;
+	background-color: #333333;
+	opacity: 0.85; 
+	filter:alpha(opacity=15);
 }
 
 #slide3 h1 {
@@ -216,15 +225,17 @@ a:visited {
 
 /* Slide 4 */
 #slide4{
-	background-image:url('../images/slide2/nuke_bg.png');
-	background-color:#f68f67;
+	background-image:url('../images/slide4/power_bg.jpg');
+	background-position: left top; 
+	background-size: 100%;
+	background-attachment: fixed;
 	color:#ffffff;
 }
 #slide4 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#944500;
+	color:#FFFFFF;
 	font-weight: 500;
 }
 
@@ -247,12 +258,25 @@ a:visited {
 
 /* Slide 5 */
 #slide5{
-	background-image:url('../images/slide3/green_bg.jpg');
-	background-color:#99ffcc;
-	background-position: left bottom; 
+	background-image:url('../images/slide5/nuclear4.jpg');
+	background-position: left top; 
 	background-size: 100%;
 	background-attachment: fixed;
 	color:#f0f0f0;
+}
+
+#slide5_container #content{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	padding: 20px 20px 60px 20px;
+	background-color: #333333;
+	opacity: 0.85; 
+	filter:alpha(opacity=15);
+
 }
 
 #slide5 h1 {
@@ -284,15 +308,17 @@ a:visited {
 
 /* Slide 6 */
 #slide6{
-	background-image:url('../images/slide2/nuke_bg.png');
-	background-color:#f68f67;
-	color:#ffffff;
+	background-image:url('../images/slide6/energy_bg.jpg');
+	background-position: left top; 
+	background-size: 100%;
+	background-attachment: fixed;
+	color:#f0f0f0;
 }
 #slide6 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#944500;
+	color:#ffffff;
 	font-weight: 500;
 }
 
