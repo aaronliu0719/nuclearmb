@@ -69,16 +69,17 @@ function sleep(milliseconds) {
 
 $(document).ready(function ($) {
     window.current_slide = 1;
-    init_template();
+    //init_template();
     init_slider();
     init_content_slider();
 
-    
+    /*
     while(template_progress<template_count)
     {
         console.log("sleep 500");
         sleep(500);
     }
+    */
 
     init_router();
     init_location();

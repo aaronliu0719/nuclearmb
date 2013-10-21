@@ -10,11 +10,11 @@ function init_template(){
 	much_info_template = Handlebars.compile(much_info_template_source);
 	mid_info_template = Handlebars.compile(mid_info_template_source);
 
-	load_much_info_template("data/slide2.json", $("#slide2_container"));
-	load_mid_info_template("data/slide3.json", $("#slide3_container"));
-	load_much_info_template("data/slide4.json", $("#slide4_container"));
-	load_mid_info_template("data/slide5.json", $("#slide5_container"));
-	load_much_info_template("data/slide6.json", $("#slide6_container"));
+	//load_much_info_template("data/slide2.json", $("#slide2_container"));
+	//load_mid_info_template("data/slide3.json", $("#slide3_container"));
+	//load_much_info_template("data/slide4.json", $("#slide4_container"));
+	//load_mid_info_template("data/slide5.json", $("#slide5_container"));
+	//load_much_info_template("data/slide6.json", $("#slide6_container"));
 }
 
 

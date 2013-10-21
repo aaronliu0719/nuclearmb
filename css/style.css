@@ -54,7 +54,6 @@ a:visited {
 	display: inline-block;
 	text-align: left;
 	padding:5px 0 0 10px;
-	width: 120px;
 	color: #056087;
 }
 .navigation li:hover{
@@ -74,7 +73,9 @@ a:visited {
 /* General Slides */ 
 
 .slide{
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-position: left top; 
+	background-size: 100%;
 	width:100%;
 	height:auto;
 	position: relative;
@@ -143,33 +144,165 @@ a:visited {
 
 #slide2{
 	background-image:url('../images/slide2/nuke_bg.jpg');
-	background-position: left top; 
-	background-size: 100%;
-	background-attachment: fixed;
 	color:#ffffff;
 }
-#slide2 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	line-height: 0px;
-	color:#944500;
-	font-weight: 500;
+
+.hl{
+	width: 100%;
+	text-align: center;
+	background-color: #66CCFF;
+	
 }
 
-#slide2 h1.subject{
-	font-size: 2em;
-	letter-spacing: -2px;
-	line-height: 0px;
-	color:#FFCC33;
-	font-weight: 200;
+.hl_row{
+	width:400px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 0 5px 0;
 }
+.hl_cell{
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 5px;
+	margin-bottom: 5px; 
+	border:2px solid #3b5b90;
+	border-radius:10px;
+	-moz-border-radius:10px; /* Old Firefox */
+	
+	color: #000;
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
+}
+
+.hl_cell_2{
+	display: inline-block;
+	width: auto;
+	height: 210px;
+	margin-left: 10px;
+	margin-right: 5px;
+
+}
+
+.hl_cell.c2{
+	background: #f0f9ff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0f9ff 0%, #c9dafc 47%, #9fb0f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(47%,#c9dafc), color-stop(100%,#9fb0f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f0f9ff 0%,#c9dafc 47%,#9fb0f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f0f9ff 0%,#c9dafc 47%,#9fb0f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f0f9ff 0%,#c9dafc 47%,#9fb0f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f0f9ff 0%,#c9dafc 47%,#9fb0f9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#9fb0f9',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.hl_cell.c3{
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #dcf7f0 35%, #9eedc7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#dcf7f0), color-stop(100%,#9eedc7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#dcf7f0 35%,#9eedc7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#dcf7f0 35%,#9eedc7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#dcf7f0 35%,#9eedc7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#dcf7f0 35%,#9eedc7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#9eedc7',GradientType=0 ); /* IE6-9 */
+
+}
+
+.hl_cell.c4{
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feffff 0%, #fcfbe5 35%, #eaea9d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#fcfbe5), color-stop(100%,#eaea9d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feffff 0%,#fcfbe5 35%,#eaea9d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feffff 0%,#fcfbe5 35%,#eaea9d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feffff 0%,#fcfbe5 35%,#eaea9d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feffff 0%,#fcfbe5 35%,#eaea9d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#eaea9d',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.hl_main{
+	display: inline-block;
+	overflow: left;
+}
+
+.hl_icon{
+	height: 90px;
+	line-height: 90px;
+	padding-top: 10px;
+	display: inline-block;
+	overflow: right;
+	vertical-align: top;
+}
+
+.hl_icon_img{
+	height: 90px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+.hl_title{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 1.25em;
+	color: #ec9000;
+	width: 300px;
+}
+
+.hl_cell ul{
+	width: 300px;
+	margin: 0 0 0 20px;
+	padding: 0;
+	display: inline-block;
+}
+
+#slide2 .slide_title{
+	font-size: 4em;
+	letter-spacing: -2px;
+	color:#ffcc00;
+	font-weight: 200;
+	margin: 0;
+	background-color: #ff0000;
+	
+}
+
+
+
+#slide2 h1 {
+	font-size: 4em;
+	letter-spacing: -2px;
+	line-height: 1.2em;
+	color:#101010;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	height: 1.3em;
+	line-height: 1.3em;
+	vertical-align: middle;
+}
+
 
 
 #slide2 h2 {
 	font-size: 1.5em;
 	letter-spacing: -3px;
-	line-height: 0px;
-	color:#ffffff;
+	line-height: 1.2em;
+	color:#ffcc00;
 	font-weight: 400;
 }
 
@@ -177,9 +310,6 @@ a:visited {
 /* Slide 3 */ 
 #slide3{
 	background-image:url('../images/slide3/green_bg.jpg');
-	background-position: left top; 
-	background-size: 100%;
-	background-attachment: fixed;
 	color:#f0f0f0;
 }
 
@@ -226,9 +356,6 @@ a:visited {
 /* Slide 4 */
 #slide4{
 	background-image:url('../images/slide4/power_bg.jpg');
-	background-position: left top; 
-	background-size: 100%;
-	background-attachment: fixed;
 	color:#ffffff;
 }
 #slide4 h1 {
@@ -259,9 +386,6 @@ a:visited {
 /* Slide 5 */
 #slide5{
 	background-image:url('../images/slide5/nuclear4.jpg');
-	background-position: left top; 
-	background-size: 100%;
-	background-attachment: fixed;
 	color:#f0f0f0;
 }
 
@@ -309,9 +433,6 @@ a:visited {
 /* Slide 6 */
 #slide6{
 	background-image:url('../images/slide6/energy_bg.jpg');
-	background-position: left top; 
-	background-size: 100%;
-	background-attachment: fixed;
 	color:#f0f0f0;
 }
 #slide6 h1 {

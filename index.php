@@ -19,9 +19,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css?v=1.0" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/slider_style.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="js/lib/fancybox2/jquery.fancybox.css?v=2.1.5" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="css/font.css" type="text/css"  media="screen" />
 	<link rel="stylesheet" href="css/win8.css" type="text/css"  media="screen" />
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -39,20 +40,17 @@
 		<div class="container clearfix">
 
 			<div id="logo" class="grid_3">
-				<img src="images/buster_logo.jpg"/>
+				<img src="images/buster_logo.png"/>
 			</div>
 
 			<div id="nav" class="grid_9 omega">
 				<ul class="navigation">
-					<li data-slide="1">核能流言終結者</li>
-					<li data-slide="2">核電好危險？</li>
-					<li data-slide="3">綠能是王道？</li>
-					<li data-slide="4">節電就夠用？</li>
-					<li data-slide="5">核四拆爛污？</li>
-					<li data-slide="6">能源與經濟發展</li>
-					<li data-slide="7">FQA</li>
-					<li data-slide="8">理性大串連</li>
-					<li data-slide="9">關於我們</li>
+					<li class="nav_item" data-slide="1">核能流言終結者</li>
+					<li class="nav_item" data-slide="2">核電好危險？</li>
+					<li class="nav_item" data-slide="3">綠能與節電的迷思</li>
+					<li class="nav_item" data-slide="4">FQA</li>
+					<li class="nav_item" data-slide="5">理性大串連</li>
+					<li class="nav_item" data-slide="6">關於我們</li>
 				</ul>
 			</div>
 			<p class="fuck_anti_nuke">
@@ -70,74 +68,24 @@
 
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
-			<div id="decorative" class="grid_5">
-				<img src="images/slide1/nuke_buster.jpg">
-
-				<!-- TODO: 上線時請解開mark
-				<div style="width:100%; text-align:center">
-					<div class="fb-like" data-href="http://aaronliu.asuscomm.com/nuclearmb/" data-width="350" data-show-faces="true" data-send="true"></div>
-				</div>
-				-->
-			</div>
-			<div id="content" class="grid_7 omega">
-				<h1>核能流言終結者</h1>
-				<h2>理性思考核能，破除誇大恐懼</h2>
-				<p>
-					福島事件即將發生在台灣？綠能真的可以取代核能？不蓋核電廠一樣有電可用？核四施工亂七八糟？
-					紛雜的資訊，矛盾的說法，在街頭巷議中，我們聽到多少實話？多少流言？
-				</p>
-				<p>
-					核能流言終結者，是一群公民發起的核能運動，旨在一片反核聲浪中，揭露最真實的核能現況。
-					這裡沒有權貴、沒有名嘴、沒有黑金，只有一群用理性思考的鄉民。
-					這裡沒有理盲、沒有濫情、沒有政治，只有一顆憑證據說話的良心。
-					就讓我們用深入淺出的方式，帶您實實在在進入台灣人必須理解的核能議題。
-				</p>
-				<p class="slide_footer">
-					<a class="site_link" href="https://www.facebook.com/NuclearMythbusters" target="_blank">
-						<img src="images/fb.png" />核能流言終結者粉絲團
-					</a> <br/>
-					<a class="site_link" href="https://www.facebook.com/groups/294171667382837" target="_blank">
-						<img src="images/fb.png" />核能流言終結者聊天室
-					</a> <br/>
-					<a class="site_link" href="http://nuclearmythbusters.blogspot.tw" target="_blank">
-						<img src="images/blogger.png" />核能流言終結者部落格
-					</a> 
-				</p>
-				
-			</div>
-			<div class="license grid_12">
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/tw/88x31.png" /></a><br />
-				本網站採用 <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/tw/deed.en_US">創用CC 姓名標示-相同方式分享 3.0 台灣</a> 授權條款 | 核能流言終結者
-			</div>
-			
+			<?php include_once("inc/home.php"); ?>
 		</div>
 			
 	</div>
-
-
-
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div id="slide2_container" class="container clearfix">
-
+			<div id="large_info_container" >
+				<?php include_once("inc/about_nuke.php"); ?>
+			</div>
 		</div>
 	</div>
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div id="slide3_container" class="container clearfix">
+			<?php include_once("inc/green_energy.php"); ?>
 		</div>
 	</div>
-	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-		<div id="slide4_container" class="container clearfix">
-		</div>
-	</div>
-	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
-		<div id="slide5_container" class="container clearfix">
-		</div>
-	</div>
-	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
-		<div id="slide6_container" class="container clearfix">
-		</div>
-	</div>
-	<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	
+	<div class="slide" id="slide7" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content">
 				<h1>常見問題集</h1>
@@ -149,7 +97,7 @@
 		</div>
 	</div>
 
-	<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide8" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content">
 				<h1>理性大串連</h1>
@@ -194,7 +142,7 @@
 
 
 
-	<div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide9" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
@@ -237,54 +185,6 @@
 			</div>
 		</div>
 	</div>
-	<script id="much-info-template" type="text/x-handlebars-template">
-		
-		<div id="content" class="grid_12">
-		<h1>{{slide_title}}</h1>
-		<div class="rotator">
-            <ul id="rotmenu"  >
-            	{{#each subjects}}
-                	<li class="rotmenu_item" display="{{../display}}" subject="subject_{{subject_id}}">
-                        <a class="info_menu" href="{{subject_id}}">{{subject_title}}</a>
-                        <div style="display:none;">
-                            <div class="info_image">{{subject_image}}</div>
-                            <div class="info_heading">{{subject_sub_title}}</div>
-                            <div class="info_description">
-                            	{{subject_description}}...
-                                <a id="more" class="more fancybox fancybox.ajax" 
-                                	href="{{subject_content_url}}" onclick="more_click(this, '{{../slide_id}}', '{{subject_id}}', '{{subject_title}}')">Read more</a>
-                            </div>
-                        </div>
-                    </li>
-                {{/each}}
-            </ul>
-            <div id="{{display}}">
-                <img src="" width="800" height="440" class="bg" alt=""/>
-                <div class="heading">
-                    <h1 class="subject"></h1>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>    
-            </div>
-        </div>
-        <div class="grid_12" style="height: 200px">&nbsp;</div>
-	</script>
-	<script id="mid-info-template" type="text/x-handlebars-template">
-		<div id="content" class="grid_9">
-			<h1>{{slide_title}}</h1>
-			{{#each subjects}}
-				<h2>{{subject_title}}</h2>
-				<div class="answer">
-					{{subject_description}}...
-					<a class="more fancybox fancybox.ajax" href="{{subject_content_url}}">Read more</a>
-				</div>
-			{{/each}}
-		</div>
-		<div id="content_blank" class="grid_3">&nbsp;
-		</div>
-		<div class="grid_12" style="height: 200px">&nbsp;</div>
-	</script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js"></script>

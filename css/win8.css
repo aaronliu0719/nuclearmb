@@ -19,92 +19,6 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff')
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot');
-  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon.svg#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-
-[data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-
-.icon-arrow-right,
-.icon-calendar-alt-fill,
-.icon-chrome,
-.icon-picassa,
-.icon-skype,
-.icon-cloud,
-.icon-cloudy,
-.icon-dropbox,
-.icon-instagram {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased
-}
-
-.icon-arrow-right:before {
-  content: "\e000"
-}
-
-.icon-calendar-alt-fill:before {
-  content: "\e001"
-}
-
-.icon-chrome:before {
-  content: "\e002"
-}
-
-.icon-picassa:before {
-  content: "\e003"
-}
-
-.icon-skype:before {
-  content: "\e004"
-}
-
-.icon-cloud:before {
-  content: "\e005"
-}
-
-.icon-cloudy:before {
-  content: "\e006"
-}
-
-.icon-dropbox:before {
-  content: "\e007"
-}
-
-.icon-instagram:before {
-  content: "\f16d"
-}
 
 /*
 
@@ -428,7 +342,7 @@ header a {
 .dashboard {
   margin: 0 auto;
   width: 100%;
-  padding: 1em;
+  padding: 0;
   -webkit-transform: translateX(200px);
   -ms-transform: translateX(200px);
   -o-transform: translateX(200px);
@@ -436,8 +350,26 @@ header a {
   opacity: 0;
   -webkit-animation: start 1s ease-out forwards;
   -o-animation: start 1s ease-out forwards;
-  animation: start 1s ease-out forwards
+  animation: start 1s ease-out forwards;
+
+
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
+
+.dashboard ul {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+  padding: 0;
+}
+
+
 
 @-webkit-keyframes start {
   0% {
@@ -481,12 +413,12 @@ header a {
 .col2,
 .col3 {
   width: 99%;
-  margin: 1em auto
+  margin: 5px auto
 }
 
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
  
 ::-webkit-scrollbar-thumb {
@@ -504,7 +436,7 @@ header a {
   text-align: center;
   font-size: 2em;
   font-weight: 300;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   left:0;
@@ -571,11 +503,10 @@ header a {
   height: 8em;
   font-weight: 300;
   overflow: hidden;
-  cursor: pointer;
+
   position: relative;
   background-color: #fff;
   color: #333;
-  position: relative;
   -webkit-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out
@@ -653,6 +584,7 @@ header a {
 
 .tile div p {
   display: table-cell;
+  text-indent : 0em ;
   vertical-align: middle
 }
 
@@ -718,7 +650,7 @@ header a {
 }
 
 .tile-3 p {
-  font-size: 4em;
+  font-size: 2em;
   margin-top: .5em
 }
 
@@ -730,13 +662,13 @@ header a {
 .tile-5 p span,
 .tile-6 p span {
   font-size: 1.3em;
-  margin-right: .7em;
+  margin-right: .2em;
   position: relative;
   top: .15em
 }
 
 .tile-6 p span {
-  margin-right: 1em
+  margin-right: .2em
 }
 
 /* slide text inside tile up */
@@ -812,7 +744,7 @@ header a {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 78%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -858,7 +790,7 @@ header a {
 }
 
 .back p {
-  padding: 2.5em 3em
+  padding: 2em .5em
 }
 
 .rotate3dY:hover .faces:hover {
@@ -954,7 +886,7 @@ input {
   .col3 {
     float: left;
     margin-right: .5%;
-    width: 31%
+    width: 33%
   }
 
   .col3 {
@@ -962,7 +894,7 @@ input {
   }
 
   .col1 {
-    margin-left: 2em
+    margin-left: 0
   }
   .page-title{
     font-size:3.5em;

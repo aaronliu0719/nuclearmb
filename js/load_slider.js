@@ -1,14 +1,18 @@
 function init_slider(){
-    $(window).stellar();
 
-    var links = $('.navigation').find('li'),
-        slide = $('.slide'),
+    
+    
+    
+    
+    var slide = $('.slide'),
         button = $('.button'),
         mywindow = $(window),
+        links = $('li.nav_item'),
         htmlbody = $('html,body');
 
+    $(window).stellar();
 
-
+    
     slide.waypoint(function (event, direction) {
         
         dataslide = $(this).attr('data-slide');
@@ -29,6 +33,7 @@ function init_slider(){
         window.current_slide = dataslide;
 
     });
+    
  
     mywindow.scroll(function () {
 
@@ -97,12 +102,13 @@ function init_slider(){
 
     window.goToByScroll = goToByScroll;
 
+    
     links.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
     });
-
+    
     button.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
