@@ -15,7 +15,7 @@
     <meta property="og:description" content="理性思考核能，破除誇大恐懼" />
 
 	<title>核能流言終結者</title>
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="favicon.png" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
@@ -48,9 +48,8 @@
 					<li class="nav_item" data-slide="1">核能流言終結者</li>
 					<li class="nav_item" data-slide="2">核電好危險？</li>
 					<li class="nav_item" data-slide="3">綠能與節電的迷思</li>
-					<li class="nav_item" data-slide="4">FQA</li>
-					<li class="nav_item" data-slide="5">理性大串連</li>
-					<li class="nav_item" data-slide="6">關於我們</li>
+					<li class="nav_item" data-slide="4">理性大串連</li>
+					<li class="nav_item" data-slide="5">關於我們</li>
 				</ul>
 			</div>
 			<p class="fuck_anti_nuke">
@@ -84,20 +83,8 @@
 			<?php include_once("inc/green_energy.php"); ?>
 		</div>
 	</div>
-	
-	<div class="slide" id="slide7" data-slide="4" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
-			<div id="content">
-				<h1>常見問題集</h1>
-				<h3>Q/A 1</h3>
-				<h3>Q/A 2</h3>
-				<h3>Q/A 3</h3>
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			</div>
-		</div>
-	</div>
 
-	<div class="slide" id="slide8" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide8" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content">
 				<h1>理性大串連</h1>
@@ -142,7 +129,7 @@
 
 
 
-	<div class="slide" id="slide9" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide9" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">

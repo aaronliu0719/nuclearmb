@@ -74,7 +74,7 @@
 	            <figcaption class="tile-caption caption-bottom" style="background-color: #006666">核電是新時代的潔淨能源，但一般人卻因缺乏瞭解而畏懼，讓我們用瞭解取代恐懼，理性思考核能的利用方式
 	            </figure>
 	        </li>
-	        <a href="#">
+	        <a href="data/fusheABC.php">
 	        <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
 	          <div><p style="font-size: 1.5em"><span class="icon-taiwn"></span>核四是拼裝車？</p></div>
 	          <div><p style="font-size: 1.5em">整合是業界常態</p></div>
@@ -82,12 +82,12 @@
 	    	</a>
 		</div>
         <div class="col2 clearfix">
-        	<a href="#">
+        	<a href="data/fusheABC.php">
         	<li class="tile tile-big tile-5" data-page-type="r-page" data-page-name="random-r-page">
 	          <div><p ><span class="icon-atom-2"></span>輻射ABC</p></div>
 	        </li>
 	        </a>
-	        <a href="#">
+	        <a href="data/fusheABC.php">
 	        <li class="tile tile-big tile-1 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
 	          <div class="faces">
 	            <div class="front"><span class="icon-nuclear"></span></div>
@@ -95,7 +95,7 @@
 	          </div>
 	        </li>
 	        </a>
-	        <a href="#">
+	        <a href="data/fusheABC.php">
 	        <li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
 	          <figure>
 	            <img src="images/slide2/nuclear_waste.jpg" />
@@ -105,13 +105,13 @@
 	        </a>
 		</div>
 		<div class="col3 clearfix">
-			<a href="#">
+			<a href="data/fusheABC.php">
 			<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
 	          <div><p><span class="icon-world_map"></span> 廢核是世界主流？</p></div>
 	          <div><p><span class="icon-nuke_symble"></span> 解析世界核能趨勢</p></div>
 	        </li>
 	        </a>
-	        <a href="#">
+	        <a href="data/fusheABC.php">
         	<li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
 	          <figure>
 	            <img src="images/slide2/fukushima.png" />
