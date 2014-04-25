@@ -10,7 +10,7 @@ require_once("../inc/common.php");
 
 	<meta name="description" content="核能流言終結者——理性思考核能，破除誇大恐懼">
 	<meta name="keywords" content="核能,核四,核電,台電,擁核,反核,劉黎兒,方儉,楊斯棓,媽媽監督核電廠聯盟,綠色公民行動聯盟,反核部隊,綠色消費者基金會,爸爸非核陣線">
-	<meta property="og:title" content="沒有核電廠被地震Damaged過 — 核能流言終結者">
+	<meta property="og:title" content="<?php echo $GLOBALS['page_title']; ?> — 核能流言終結者">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="核能流言終結者">
 	<meta property="og:description" content="理性思考核能，破除誇大恐懼">

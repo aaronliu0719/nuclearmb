@@ -2657,11 +2657,29 @@ article:lang(zh) table {
   margin: 2.5rem 0 3rem;
   width: 55rem;
 }
+
+article:lang(zh) table.simple {
+  margin: 0rem 0 3rem;
+  width: 39rem;
+}
+
 article:lang(zh) table thead {
   border-bottom: 2px solid rgba(53, 127, 16, 0.4);
   color: #04686e;
   text-align: left;
 }
+
+article:lang(zh) table tfoot {
+  border-top: 2px solid rgba(53, 127, 16, 0.4);
+  border-bottom: none;
+  text-align: left;
+  font-style: italic;
+}
+article:lang(zh) table tfoot td {
+  border-bottom: none;
+}
+
+
 article:lang(zh) table th, article:lang(zh) table td {
   border-bottom: 1px dotted;
   border-color: #ccc;
@@ -2670,6 +2688,13 @@ article:lang(zh) table th, article:lang(zh) table td {
   text-align: justify;
   vertical-align: top;
 }
+
+article:lang(zh) table.simple th, article:lang(zh) table.simple td {
+
+  padding: 0 0.75rem;
+}
+  
+
 article:lang(zh) table tbody tr:hover th, article:lang(zh) table tbody tr:hover td {
   background-color: rgba(255, 255, 255, 0.5);
 }

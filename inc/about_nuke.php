@@ -1,4 +1,5 @@
 <h1>核電好危險？</h1>
+<!--
 <div class="hl">
 	<div class="hl_row">
 		<div class="hl_cell">
@@ -58,13 +59,14 @@
 				<ul>
 					<li>反核團體無能力直接監督核四工程</li>
 					<li>所舉缺失均來自原能會公開資訊</li>
-					<li>工程過程中發現缺失是好事</li>
+					<li>施工過程中及早發現缺失並改正是好事</li>
 				</ul>
 			</div>
 			
 		</div>
 	</div>
 </div>
+-->
 <div class="dashboard clearfix">
 	<ul class="tiles">
 		<div class="col1 clearfix">
@@ -74,12 +76,11 @@
 	            <figcaption class="tile-caption caption-bottom" style="background-color: #006666">核電是新時代的潔淨能源，但一般人卻因缺乏瞭解而畏懼，讓我們用瞭解取代恐懼，理性思考核能的利用方式
 	            </figure>
 	        </li>
-	        <a href="data/fusheABC.php">
-	        <li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
-	          <div><p style="font-size: 1.5em"><span class="icon-taiwn"></span>核四是拼裝車？</p></div>
-	          <div><p style="font-size: 1.5em">整合是業界常態</p></div>
+	    	<a href="http://zh.nuke.wikia.com/wiki/%E5%9C%B0%E9%9C%87%E5%B8%B6%E8%88%87%E6%A0%B8%E9%9B%BB%E5%BB%A0%E7%9A%84%E8%BF%B7%E6%80%9D">
+        	<li class="tile tile-big tile-10" data-page-type="r-page" data-page-name="random-r-page">
+	          <div><p><span class="icon-taiwn"></span>地震國不該發展核電？</p></div>
 	        </li>
-	    	</a>
+	        </a>
 		</div>
         <div class="col2 clearfix">
         	<a href="data/fusheABC.php">
@@ -87,15 +88,15 @@
 	          <div><p ><span class="icon-atom-2"></span>輻射ABC</p></div>
 	        </li>
 	        </a>
-	        <a href="data/fusheABC.php">
+	        <a href="http://zh.nuke.wikia.com/wiki/%E6%A0%B8%E5%9B%9B%E5%B7%A5%E7%A8%8B%E5%93%81%E8%B3%AA">
 	        <li class="tile tile-big tile-1 rotate3d rotate3dX" data-page-type="r-page" data-page-name="random-r-page">
 	          <div class="faces">
-	            <div class="front"><span class="icon-nuclear"></span></div>
+	            <div class="front"><span class="icon-nuclear">核四</span></div>
 	            <div class="back"><p>核四施工品質低落？</p></div>
 	          </div>
 	        </li>
 	        </a>
-	        <a href="data/fusheABC.php">
+	        <a href="http://zh.nuke.wikia.com/wiki/%E6%A0%B8%E5%BB%A2%E6%96%99%E8%99%95%E7%90%86%E7%9A%84%E4%B8%89%E5%A4%A7%E6%B3%95%E5%AF%B6">
 	        <li class="tile tile-big tile-4 fig-tile" data-page-type="r-page" data-page-name="random-r-page">
 	          <figure>
 	            <img src="images/slide2/nuclear_waste.jpg" />
@@ -105,18 +106,18 @@
 	        </a>
 		</div>
 		<div class="col3 clearfix">
-			<a href="data/fusheABC.php">
+			<a href="http://zh.nuke.wikia.com/wiki/%E5%BB%A2%E6%A0%B8%E4%B8%A6%E9%9D%9E%E4%B8%96%E7%95%8C%E4%B8%BB%E6%B5%81%E8%83%BD%E6%BA%90%E6%94%BF%E7%AD%96">
 			<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
 	          <div><p><span class="icon-world_map"></span> 廢核是世界主流？</p></div>
 	          <div><p><span class="icon-nuke_symble"></span> 解析世界核能趨勢</p></div>
 	        </li>
 	        </a>
-	        <a href="data/fusheABC.php">
+	        <a href="http://zh.nuke.wikia.com/wiki/%E7%A6%8F%E5%B3%B6%E6%A0%B8%E7%81%BD%E7%B0%A1%E4%BB%8B">
         	<li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
 	          <figure>
 	            <img src="images/slide2/fukushima.png" />
 	            <figcaption class="tile-caption caption-bottom">
-	            	<h2>福島事件</h2>
+	            	<h2>福島核災始末</h2>
 	            	福島事件的來龍去脈<br/>
 	            	核災影響與現況<br/>
 	            	福島地區未來發展剖析

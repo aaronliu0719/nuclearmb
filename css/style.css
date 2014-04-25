@@ -23,6 +23,13 @@ a:visited {
 	text-decoration: none;
 }
 
+span.column{
+	display: inline-block;
+	border: none;
+	padding: 0;
+	margin: .5em 1.5em .5em .5em;
+	float: left;
+}
 
 
 

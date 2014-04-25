@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 	<meta name="description" content="核能流言終結者 - 理性思考核能，破除誇大恐懼" />
-    <meta name="keywords" content="核能,核四,核電,台電,擁核,反核,劉黎兒,方儉,媽媽監督核電廠聯盟,綠色公民行動聯盟,反核部隊,綠色消費者基金會,爸爸非核陣線"/>
+    <meta name="keywords" content="核能,核四,核電,擁核,反核,台電,龍門電廠,劉黎兒,方儉,媽媽監督核電廠聯盟,綠色公民行動聯盟,反核部隊,綠色消費者基金會,爸爸非核陣線"/>
     <meta property="og:title" content="核能流言終結者" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/slide1/nuke_buster.jpg" />
@@ -103,7 +103,7 @@
 					href="https://www.facebook.com/pages/%E6%A0%B8%E7%82%BA%E7%9C%9F%E7%9B%B8/310465689082718">
 					核為真相</a>
 				<a id="grid_link" class="grid_6" target="_blank"
-					href="http://www.cutreader.com/filter.php?label=%E7%BE%8E%E8%8F%AF%E6%A0%B8%E8%83%BD%E5%AD%B8%E6%9C%83">
+					href="https://www.facebook.com/profile.php?id=100005635743262">
 					美華核能學會</a> 
 				<a id="grid_link" class="grid_6 omega" target="_blank"
 					href="http://www.energypk.com/">
@@ -137,23 +137,26 @@
 				<h2>良心是我們凝聚的開始 理性是我們互動的語言</h2>
 				<p>
 					核能流言終結者是一個透過網路進行的串連的社團，這裡只有理性思考的公民，沒有財團支持、不具政黨色彩、更不受台電或政府援助，
-					我們訴求的只是關心社會、講究證據、理性思考，同時我們也唾棄理盲、濫情與政治語言。
+					我們的訴求是：關心社會之餘必須講究證據、理性思考，同時也唾棄理盲、濫情與政治語言。
 				</p>
 				<p>
-					近來風起雲湧的反核運動，在能源專業之外露出了許多政黨、財團的色彩，同時也讓政治操作模糊了大眾對於正確核能知識的認知。
+					近來風起雲湧的反核運動，在能源專業之外露出許多政黨、財團的色彩，同時也讓政治操作模糊了大眾對於正確核能知識的認知。
 					我們秉持理性思考、講究證據的精神，對於訴諸政治操作的反核運動感到失望，畢竟能源是經濟的命脈之一，
-					以政治綁架能源就是以政治迫害民生。因此，我們透過網路集結起來，想方設法散佈正確的核能知識，
-					同時也針對各大反核團體所提的謬誤流言提出破解，希望能喚醒大眾面對重大議題時應有的理性。
+					以政治綁架能源就是以政治迫害民生。因此，我們透過網路集結，想方設法散佈正確的核能知識，
+					同時也針對各大反核團體所提的謬誤流言提出破解，希望喚醒大眾應有的理性。
 				</p>
 				<p>
-					如果您和我們一樣，願意用理性去公平地審視核能議題，歡迎您加入我們。
+					如果您和我們一樣，願意理性、公平地審視核能議題，歡迎您加入我們。
 				</p>
 				<p class="slide_footer">
 					<a class="site_link" href="https://www.facebook.com/NuclearMythbusters" target="_blank">
-						<img src="images/fb.png" />核能流言終結者粉絲團
+						<img src="images/fb2.png" />核能流言終結者粉絲團
 					</a> <br/>
 					<a class="site_link" href="https://www.facebook.com/groups/294171667382837" target="_blank">
 						<img src="images/fb.png" />核能流言終結者聊天室：公開交流園地
+					</a> <br/>
+					<a class="site_link" href="http://zh.nuke.wikia.com/" target="_blank">
+						<img src="images/atom.png" />核能流言終結者維基：忠於科學的核能知識庫
 					</a> <br/>
 					<a class="site_link" href="http://nuclearmythbusters.blogspot.tw" target="_blank">
 						<img src="images/blogger.png" />核能流言終結者部落格：最信實的核能科普資訊

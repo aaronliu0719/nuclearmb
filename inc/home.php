@@ -21,15 +21,21 @@
 	就讓我們用深入淺出的方式，帶您實實在在進入台灣人必須理解的核能議題。
 </p>
 <p class="slide_footer">
+	<span class="column">
 	<a class="site_link" href="https://www.facebook.com/NuclearMythbusters" target="_blank">
-		<img src="images/fb.png" />核能流言終結者粉絲團
+		<img src="images/fb2.png" />核能流言終結者粉絲團
 	</a> <br/>
 	<a class="site_link" href="https://www.facebook.com/groups/294171667382837" target="_blank">
 		<img src="images/fb.png" />核能流言終結者聊天室
 	</a> <br/>
+	</span><span class="column">
+	<a class="site_link" href="http://zh.nuke.wikia.com" target="_blank">
+		<img src="images/atom.png" />核能流言終結者維基
+	</a> <br/>
 	<a class="site_link" href="http://nuclearmythbusters.blogspot.tw" target="_blank">
 		<img src="images/blogger.png" />核能流言終結者部落格
 	</a> 
+	</span>
 </p>
 
 </div>
