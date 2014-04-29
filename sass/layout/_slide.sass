@@ -1,0 +1,117 @@
+
+
+.slide
+    +curve
+    // posi
+    margin: -10px 0 0
+    // box
+    overflow: hidden
+    padding-top: 70px
+    // typo
+    font-family: $font-Gill_Sans-zh
+
+    #slide6
+        +decurve
+    html.han-biaodian-pro & *:not(:lang(zh)):not(:lang(ja)) 
+        font-family: $font-Gill_Sans
+    h1 
+        // posi
+        margin: .5em auto .25em
+        // box
+        width: 900px
+        // typo
+        font-size: 3.8em
+        font-weight: normal
+        line-height: 1
+
+        span 
+            font-weight: bolder
+    h1 + h2 
+        // posi
+        margin: -.5em auto 1em
+        // box
+        width: 900px
+
+nav.layout
+    z-index: 110
+#slide1
+    z-index: 100
+#slide2
+    z-index: 90
+#slide2-1
+    z-index: 87
+#slide2-2
+    z-index: 83
+#slide3
+    z-index: 80
+#slide4
+    z-index: 70
+#slide5
+    z-index: 60
+#slide6
+    z-index: 50
+
+/*
+ *  iPad
+ */
+@media only screen and (max-width: 999px)
+    .slide 
+        h1,
+        h1 + h2 
+            width: 730px
+
+/*
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    .slide 
+        h1,
+        h1 + h2
+            width: 600px
+        h1
+            font-size: 3.5em
+        h1 + h2
+            font-size: 1.8em
+
+/*
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    .slide
+        +decurve
+        box-shadow: rgba(#333, .3) 0 3px 10px
+
+        h1,
+        h1 + h2
+            width: 95%
+        h1
+            font-size: 3em
+        h1 + h2
+            font-size: 1.5em !important
+
+@import slide/1
+@import slide/2
+@import slide/2-1
+@import slide/3
+@import slide/4
+@import slide/5
+@import slide/6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

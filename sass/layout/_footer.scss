@@ -1,0 +1,88 @@
+
+
+body > footer {
+	margin: 15rem 0 0;
+	padding: 3em 0 7em;
+
+	width: 100%;
+
+	background-color: #999;
+	box-shadow: rgba(#777, .7) 0 7px 10px inset;
+
+
+	> div {
+		margin: 0 auto;
+		width: 32em;
+	}
+
+
+	h1,
+	h1 + p.des {
+		color: rgba(#fff, .9);
+		letter-spacing: .25em;
+		font-family: $font-Minion_Pro-zh;
+		font-weight: normal;
+		padding-left: .25em;
+		text-align: center;
+		text-shadow: #666 2px 2px 3px;
+	}
+
+
+	h1 + p.des {
+		font-size: 1.1em;
+		letter-spacing: 0;
+		margin-top: -1em;
+		opacity: .9;
+		padding-left: 0;
+
+
+		&:after {
+			@include psebox(100%, 40px, relative);
+			left: 0;
+			margin: .75em 0 .5em;
+
+			background: url(./images/hr.png) center -20px no-repeat;
+			background-size: 60px;
+		}
+	}
+
+
+
+	a:link,
+	a:visited {  color: #faf3c3;  }
+
+	a:hover,
+	a:active {  color: #f3e270;  }
+
+
+	p {
+		color: #fff;
+		font-size: .9em;
+		line-height: 1.7;
+		text-align: justify;
+	}
+
+	p.more {
+		font-size: .8em;
+		text-align: right;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+
+
+/**
+ * 綠能與節電的迷思
+ */ 
+
+#slide3 
+    // box
+    height: 650px
+    padding-top: 0
+    // style
+    background-color: #000
+
+    /* 圖片的漸層黑邊 */
+    $border-radius: 30%
+
+    &:before,
+    &:after 
+        +psebox(1024px, 650px, absolute)
+        // posi
+        border-radius: $border-radius
+        left: 50%
+        margin-left: -512px
+        top: 0
+        z-index: -10
+        // style
+        background: #000 url(images/slide3/green_power@2x.jpg) center top no-repeat
+        background-size: 1024px
+    
+    &:after 
+        +psebox(1024px, 650px, absolute)
+        // posi
+        z-index: -5
+        // style
+        background: none
+        box-shadow: #000 0 10px 100px inset, #000 60px 0 100px inset, #000 -60px 0 100px inset
+    
+    > div
+        // posi
+        margin: 80px 0 0 -440px
+        position: relative
+        left: 50%
+        // box
+        width: 650px
+        padding: .7em 1.5em 2em
+        // style
+        background-color: rgba(#333, .75)
+        border: 1px solid rgba(#fff, .8)
+        border-radius: 10px
+        color: #ddd
+
+    h1, h2,
+    p 
+        margin: 0
+    h2 
+        margin: 1em 0 .1em
+        font-weight: normal
+    a:link
+        color: #fc3
+    a:visited
+        color: #e8b419
+    a:hover
+        color: #d9a60d
+    a:active
+        color: #777
+    a.more 
+        // posi
+        margin-left: .25em
+        // box
+        display: inline-block
+        // typo
+        font-size: .9em
+    a.more:after   
+        +fawesome('\f138')
+        padding-left: .25em
+    a.more:hover:after 
+        padding-left: .35em
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    #slide3
+        height: 600px
+
+        &:before
+            border-radius: 0
+        &:after
+            display: none
+
+        > div
+            margin: 50px 0 0 -370px
+            width: 600px
+
+/* 
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    #slide3
+        height: 520px
+
+        > div
+            left: auto
+            margin: 35px -50px 0 auto
+            padding-right: 50px
+        a.more
+            display: none
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    #slide3
+        height: auto
+
+        > div
+            margin: 30px -10px 35px auto
+            padding: 7px 15px 3.5em
+            width: auto
+            max-width: 23em
+        h1
+            font-size: 2.7em
+
+            span:nth-of-type(2):before
+                content: ''
+                display: block
+                height: 0
+                margin-top: -.35em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

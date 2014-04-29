@@ -1,0 +1,40 @@
+<div id="about">
+	<article>
+		<h1>關於<span>我們</span></h1>
+		<h2><span>良心</span>是我們凝聚的開始　<span>理性</span>是我們互動的語言</h2>
+
+		<p>核能流言終結者是一個透過網路進行串連的社團，這裡只有理性思考的公民，沒有財團支持、不具政黨色彩、更不受台電或政府援助，我們訴求的只是關心社會、講究證據、理性思考，同時我們也唾棄理盲、濫情與政治語言。
+		<p>近來風起雲湧的反核運動，在能源專業之外露出了許多政黨、財團的色彩，同時也讓政治操作模糊了大眾對於正確核能知識的認知。我們秉持理性思考、講究證據的精神，對於訴諸政治操作的反核運動感到失望，畢竟能源是經濟的命脈之一，以政治綁架能源就是以政治迫害民生。因此，我們透過網路集結起來，想方設法傳播正確的核能知識，同時也針對各大反核團體所提的謬誤流言提出破解，希望能喚醒大眾面對重大議題時應有的理性。
+		<p>如果您和我們一樣，願意用理性去公平地審視核能議題，歡迎您加入我們。
+	</article>
+
+	<ul class="site-branches">
+		<li>
+			<a target="_blank" rel="nofollow" class="facebook" href="https://www.facebook.com/NuclearMythbusters">「核能流言終結者」粉絲團</a>
+			<p class="des">核電與能源的最新資訊
+		<li>
+			<a target="_blank" rel="nofollow" class="facebook" href="https://www.facebook.com/groups/294171667382837">「核能流言終結者」聊天室</a>
+			<p class="des">公開交流園地
+		<li>
+			<a target="_blank" rel="nofollow" class="wiki" href="//zh.nuke.wikia.com/">「核能流言終結者」維基</a>
+			<p class="des">忠於科學的核能知識庫
+		<li>
+			<a target="_blank" rel="nofollow" class="blogger" href="//nuclearmythbusters.blogspot.tw">「核能流言終結者」部落格</a>
+			<p class="des">最信實的核能科普資訊
+	</ul>	
+</div>
+
+<div id="copyright">
+	<h2>授權內容索引</h2>
+	<ul>
+		<li>
+			<a target="_blank" rel="nofollow" href="http://www.flickr.com/photos/karelh/9531207088/">
+				Sunset near Dampierre nuclear power plant</a>
+		<li>
+			<a target="_blank" rel="nofollow" href="http://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:GreenMountainWindFarm_Fluvanna_2004.jpg">
+				Green Mountain Wind Farm Fluvanna</a>
+		<li>
+			<a target="_blank" rel="nofollow" rel="nofollow" href="http://www.flickr.com/photos/36197880@N03/5907145147/in/photolist-9ZZEs8-9ZZFgv-9ZZFVz-9ZZFpV-9Rhxzy-dUTqNn-ekvNpi-ekvNaZ-dVEoDR-dVEoE6-8t7rwv-8t7oRg-8t7mQt-8t7quF-8tnLkM-aSh7d4-8K8YZz-97rsdD-97rskv-97rseT-97uynS-97rsxM-8K8YYt-97rsbT-97rsje-97uygE-8Pc8Eg-dURghc-fdFYXt-fdWfDw-cwe6us-9zcsMr-8RqBqm-8RqB49-czPqp7-f1rM2m-a4ohRa-a4ohdz">
+				Green Taipei Night View</a>
+	</ul>
+</div>

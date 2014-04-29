@@ -1,0 +1,83 @@
+
+
+body.article article:lang(zh) {
+	color: #222;
+	font-family: $font-Gill_Sans-zh;
+	left: 50%;
+	margin-left: -27em;
+	padding: 2em 0 7em;
+	top: 280px;
+	width: 37em;
+
+
+	.han-biaodian-pro & strong:lang(zh) {
+		font-family: $font-Gill_Sans-zh;
+	}
+
+	.han-biaodian-pro & :not(:lang(zh)),
+	.han-biaodian-pro & strong :not(:lang(zh)) {
+		font-family: $font-Gill_Sans;
+	}
+
+
+	@import './article/header';
+
+
+	h4 + p {
+		margin-top: -1em;
+	}
+
+
+	header:after,
+	hr:after {
+		@include psebox(80px, 20px);
+		margin: 2em auto 1em;
+
+		// style
+		background: url(./images/hr.png) center top no-repeat;
+		background-size: 80px;
+	}
+
+
+	hr {
+		border: none;
+		margin: 0;
+		opacity: .5;
+	}
+
+
+	hr + p,
+	hr + ol,
+	hr + ul,
+	hr + table {
+		margin-top: 1.75em;
+	}
+
+
+
+	@import './article/list';
+	@import './article/figure';
+	@import './article/table';
+
+	@import './article/copyright';
+	@import './article/cite';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

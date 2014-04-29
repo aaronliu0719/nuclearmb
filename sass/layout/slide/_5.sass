@@ -1,0 +1,102 @@
+
+
+/**
+ * 理性大串連
+ */
+
+$bg-color: lighten(#3593c8, 23%)
+$h1-color: #553775
+$h2-color: #744c9e
+
+#slide5
+    // box
+    height: 520px
+    padding-top: 5px
+    // style
+    background-color: $bg-color
+
+    h1
+        color: $h1-color
+    h1 + h2
+        // typo
+        font-size: 2em
+        font-weight: 300
+        line-height: 1em
+        // style
+        color: $h2-color
+    ol.links
+        +clearfix
+        bottom: 0
+        max-width: 900px
+        margin: 0 auto
+        padding: 0
+        position: relative
+    li a
+        // posi
+        display: block
+        padding: .2em 0
+        // box
+        width: 100%
+        // typo
+        font-size: 1.7em
+        text-align: center
+        // style
+        background-color: #056087
+        color: #f7fabe
+
+        &:hover
+            background-color: #057f87
+        &:active,
+        &:focus
+            background-color: darken(#056087, 5%)
+            color: #f2f78b
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    #slide5 
+        ol.links
+            width: 101%
+
+        li a 
+            font-size: 1.4em
+            padding: .4em 0
+
+/* 
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    #slide5
+        li a
+            font-size: 1.1em
+
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    #slide5 
+        height: auto
+        padding-bottom: 20px
+
+        ol.links 
+            width: 95%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

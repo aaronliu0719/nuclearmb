@@ -1,0 +1,245 @@
+
+
+/**
+ * 首頁：核能流言終結者
+ */
+
+#slide1
+	// posi
+	margin: 0 auto
+	top: 60px
+	// box
+	padding-top: 0
+	// style
+	background-color: #fff
+	color: #222
+
+	> div
+		+flexbox()
+		+justify-content(center)
+		+flex-wrap(wrap)
+	h1
+		// box
+		width: 100%
+		// typo
+		font-weight: 600
+		letter-spacing: -3px
+		margin: .15em 0 .15em
+		// style
+		color: #056087
+
+		.nuclear
+			// typo
+			font-family: 'Hiragino Kaku Gothic Std', YuGothic, 'Hiragino Kaku Gothic ProN', 'Han Heiti', sans-serif
+			font-weight: 900
+			// style
+			color: lighten(#056087, 2%)
+	h1 + h2
+		// box
+		width: 100%
+		// typo
+		font-size: 2em
+		font-weight: 300
+		line-height: 1
+		// style
+		color: #057F87
+	p
+		// box
+		width: 29em
+		// typo
+		line-height: 1.7em
+		text-align: justify
+
+	ul.site-branches
+		width: 13em
+
+#nuke-buster
+	// box
+	width: 400px
+
+	img
+		margin-top: 5.5em
+		width: 100%
+	iframe.fb-like-iframe
+		margin-top: 0px
+
+#site-description
+	// box
+	padding: 3em 1em 1em
+	width: 500px
+
+	p
+		width: 29em
+
+#site-license
+	// posi
+	margin: 1.5em auto 2em
+	// box
+	width: 650px
+	// typo
+	font-family: $font-Helvetica-zh
+	text-align: center
+	font-size: 0.7em
+	//style
+	color: #555
+
+	*:not(:lang(zh))
+		font-family: $font-Helvetica
+	p
+		// posi
+		margin: 0
+		// box
+		width: 100%
+		// typo
+		text-align: center
+	a.icon img
+		margin-bottom: .5em
+		opacity: .5
+		width: 140px
+	&:hover a.icon img
+		opacity: 1
+
+/*
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+	#slide1 
+		#nuke-buster 
+			margin-top: 60px
+			padding-left: 10px
+			width: 280px
+
+			img
+				width: 325px
+		#site-description 
+			width: 488px
+
+			h1, h2 
+				margin-left: -20px
+				text-align: right
+			h2 
+				margin-left: -23px
+			p,
+			ul.site-branches 
+				margin-left: 48px
+				width: 24em
+			ul > li 
+				width: 12em
+
+/* 
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+	#slide1 
+		top: 0
+
+		> div 
+			display: block
+			margin-top: 100px
+
+			& + div 
+				clear: both
+		#nuke-buster 
+			// posi
+			float: left
+			margin: 100px 0 0
+			// box
+			width: 30%
+
+			> img 
+				+calc("width", "333.33% - 21em")
+		#site-description
+			// box
+			width: 100%
+
+			h1,
+			h2 
+				margin: 0
+				text-align: right
+			h2 
+				margin: 0
+			p,
+			ul.site-branches 
+				margin-left: auto
+				width: 21em
+		#site-license 
+			width: 350px
+
+			.md-lengthy
+				display: none	
+
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+	#slide1
+		// posi
+		top: 0
+		// box
+		padding-top: 3em
+
+		#nuke-buster
+			// posi
+			float: none
+
+			img
+				// box
+				display: none
+
+		#site-description
+			// posi
+			margin: 0 auto
+			// box
+			max-width: 26.5em
+
+			h1,
+			h2
+				// typo
+				line-height: .7
+				text-align: left
+				text-indent: 0
+			.nuclear
+				display: block
+			h1 + h2
+				// posi
+				margin-top: 1em
+				// typo
+				font-size: 1.2em !important
+			p,
+			ul.site-branches
+				// posi
+				margin: .75em 0
+				// box
+				max-width: 25em
+				width: auto
+
+		#site-license
+			// posi
+			margin: 0 auto 3em
+			// box
+			max-width: 35em
+			width: 100%
+
+			p
+				// box
+				max-width: 30em
+				padding: 0 1em
+				text-align: left
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

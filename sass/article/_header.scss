@@ -1,0 +1,66 @@
+
+header {
+	h1 {
+		font-family: $font-Minion_Pro-zh;
+		font-weight: 600;
+		text-align: center;
+
+
+		.han-biaodian-pro & :not(:lang(zh)) {
+			font-family: $font-Minion_Pro;
+		}
+
+
+		a:link,
+		a:visited {
+			color: $article_h1-text_color;
+			text-shadow: rgba(lighten($article_h1-text_color, 15%), .45) 1px 0px 2px;
+		}
+
+		a:hover {  color: darken($article_h1-text_color, 4%);  }
+		a:active {  color: darken($article_h1-text_color, 15%);  }
+	}
+
+
+	.author-date {
+		// positioning
+		margin-top: -1rem;
+
+		// typography
+		font-size: .9em;
+		text-align: center;
+
+		// style
+		color: rgba(#116f6d, .7);
+
+
+
+		a:link,
+		a:visited {
+			color: rgba(#116f6d, .7);
+		}
+
+		a:hover,
+		a:active {
+			color: rgba(#0d5150, .9);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+
+
+figure:lang(zh) {
+	//background-color: rgba(#fff, .4);
+	float: right;
+	margin: .5em -2em .5em 1em;
+	padding: .5em;
+	width: 50%;
+
+
+	html.han-biaodian-pro & blockquote {
+		color: #057f87;
+		font-family: $font-Minion_Pro-zh;
+		margin-top: -.25em;
+
+
+		&:before {
+			color: #357f10;
+			font-size: 4em;
+			margin-left: -.2em;
+			margin-top: -.5em;
+			position: absolute;
+			text-shadow: rgba(#fff, .4) 2px 2px 0,
+						 rgba(#fff, .4) -2px -2px 0;
+		}
+
+
+		p {
+			line-height: 1.75;
+		}
+	}
+
+
+	figcaption {
+		border-top: 1px dotted #777;
+		color: #999;
+		font-family: $font-Gill_Sans-zh;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -71,8 +71,9 @@ function init_router(){
 	router.addRoute('/核能流言終結者', 		function(){ goToByScroll(1) });
 	router.addRoute('/核電好危險？', 		function(){ goToByScroll(2) });
 	router.addRoute('/綠能與節電的迷思', 	function(){ goToByScroll(3) });
-	router.addRoute('/理性大串連', 			function(){ goToByScroll(4) });
-	router.addRoute('/關於我們', 			function(){ goToByScroll(5) });
+	router.addRoute('/FQA', 				function(){ goToByScroll(4) });
+	router.addRoute('/理性大串連', 			function(){ goToByScroll(5) });
+	router.addRoute('/關於我們', 			function(){ goToByScroll(6) });
 	router.addRoute('default_route', 		function(){ goToByScroll(1) });
 
 	console.log('router complete');

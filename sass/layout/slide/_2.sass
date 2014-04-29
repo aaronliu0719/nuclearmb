@@ -1,0 +1,248 @@
+
+
+/** 
+ * 核電好危險？
+ */ 
+
+#slide2 
+    // box
+    height: 682px
+    padding-top: 0
+    // style
+    background-color: #000
+
+    h1
+        top: 40px
+
+    h1,
+    button 
+        // posi
+        margin: 30px 0 0 -425px
+        position: absolute
+        left: 50%
+        z-index: 5
+        // box    
+        width: 900px
+        // style
+        color: #fff
+    
+    /* 「終結流言」按鈕 */
+    button 
+        // posi
+        margin: 292px 0 0 -434px
+        // box
+        width: 165px
+        padding: .125em .25em
+        // typo
+        font-size: 1.8em
+        text-align: left
+        // style
+        background-color: rgba(#000, .6)
+        border: 0
+
+        &:after 
+            // 小箭頭
+            +fawesome('\f0ab')
+            block: inline-block
+            padding-left: .2em
+        &:focus 
+            outline: none
+        &:hover 
+            background-color: rgba(#e5ce30, .75)
+            color: #cd3506
+
+            span 
+                font-weight: bolder
+        &:active 
+            background-color: #000
+
+    figure
+        left: 50%
+        margin-left: -512px
+        position: absolute
+        width: 1024px
+
+        // 圖片的漸層黑邊
+        $border-radius: 30%
+        $bg: #935224
+
+        &:after 
+            +psebox(100%, 682px, absolute)
+
+            // posi
+            border-radius: $border-radius
+            left: 0
+            top: 0
+            z-index: -5
+            // style
+            // gradient
+            box-shadow: #000 0 10px 100px inset, #000 60px 0 100px inset, #000 -60px 0 100px inset
+        img 
+            border-radius: $border-radius
+            display: block
+            position: relative
+            z-index: -15
+        figcaption,
+        footer 
+            left: 78px
+            position: absolute
+        figcaption 
+            // posi
+            padding: 6.25em .5em 1.25em
+            top: 2em
+            // box
+            height: 245px
+            width: 25em
+            // style
+            background-color: rgba($bg, .6)
+        p 
+            color: #000
+            font-size: .95em
+            margin: .5em .5em -.25em
+            text-align: justify
+
+            &:lang(en) 
+                text-align: left
+        footer 
+            // posi
+            top: 32em
+            // box
+            width: 17.5em
+            padding: .25em .25em 1em
+            // style
+            background-color: #000
+            opacity: .7
+
+            &:hover 
+                background-color: rgba(#000, .8)
+                opacity: 1
+            p 
+                color: #ccc
+                font-size: .8em
+            a 
+                $c: #b13b17
+                color: $c
+            
+                &:hover
+                    color: lighten($c, 10%)
+                &:active
+                    color: darken($c, 5%) 
+        
+        a.flickr
+            display: inline-block
+
+            &:before 
+                +fawesome('\f16e')
+                display: inline-block
+                padding-right: .25em 
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    #slide2
+        height: 600px
+
+        h1 
+            margin: 25px 0 0 -365px
+        button 
+            margin: 295px 0 0 -137px
+        figure 
+            // posi
+            margin: 50px 0 0 -450px
+            // box
+            width: 901px
+
+            &:after,
+            > img 
+                // box
+                height: 600px
+                // style
+                border-radius: 0
+            figcaption
+                top: 0
+            footer 
+                top: 390px
+
+/*
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    #slide2 
+        height: 520px
+
+        h1 
+            // posi
+            margin: -20px 0 0 0
+            left: 10px
+            // typo
+            font-size: 2.7em
+
+        button 
+            // posi
+            margin: 224px 0 0 
+            left: 155px
+
+        figure 
+            left: 0
+            margin: 0
+            width: 100%
+
+            &:after,
+            > img 
+                height: 460px
+                width: 691px
+            
+            figcaption,
+            footer 
+                // posi
+                left: 0
+                padding-bottom: .5em
+                top: -1.5em
+
+                // size
+                height: auto
+                width: 20em
+            footer 
+                background: none
+                top: 450px
+                width: 100%
+                z-index: 1000
+
+                p
+                    margin: 0 0 -.2em 1em
+                &:hover
+                    background: inherit
+                br
+                    display: none    
+/*
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    #slide2 
+        figure img
+            // posi
+            position: absolute
+            right: 0
+        figure footer
+            top: 430px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

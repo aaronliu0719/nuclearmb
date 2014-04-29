@@ -1,0 +1,195 @@
+
+
+nav.layout 
+    +flexbox
+    +justify-content(center)
+    +curve
+
+    // posi
+    position: fixed
+    top: 0
+    // box
+    height: 67px
+    width: 100%
+    padding: .6em .75em
+    // style
+    background-color: #fff
+    box-shadow: rgba(153, 102, 102, 0.3) 0 1px 5px
+
+    h1
+        margin: 0
+
+    ul 
+        // posi
+        margin: 0
+        // box
+        width: 701px
+        // typo
+        text-align: right
+        // style
+        padding: .5em 0 0
+
+    li 
+        // posi
+        margin-right: 1em
+        // box
+        display: inline-block
+
+        &:nth-child(2)
+            // 問號空格kerning
+            margin-right: .6em
+
+        &:last-child
+            margin: 0
+
+        html.han-biaodian-pro & :not(:lang(zh)):not(:lang(ja))
+            font-family: $font-Gill_Sans
+
+    a:link,
+    a:visited
+        color: #056087
+    a:hover,
+    a:active
+        color: #057f87
+
+    body.index & .home a 
+        color: #c24a4a
+        font-weight: bold
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    nav.layout
+        h1 
+            width: 201px
+        h1 a.site-logo
+            // box
+            width: 181px
+            height: 50px
+
+        ul
+            width: 560px
+
+@media only screen and (max-width: 999px) and (min-width: 690px)
+    nav.layout li.home a
+        // posi
+        display: inline-block
+        position: relative
+        // box
+        width: 1.4em
+        height: 1em
+        // hide
+        color: transparent !important
+
+        &:before
+            +psebox(1em, 1em, absolute)
+            +fawesome('\f015')
+            // posi
+            margin: 0
+            left: 0
+            top: -.3em
+            z-index: 10
+            // typo
+            font-size: 1.4em
+            color: #056087
+
+            // 如果在首頁、第一張slide，房子顯示為紅色
+            body.index &
+                color: #c24a4a
+        &:hover:before
+            color: #057f87
+/* 
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    nav.layout
+        h1
+
+
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 689px) //639px
+    nav.layout
+        // posi
+        margin: 0
+        position: relative
+        // box
+        height: 50px
+        width: 100%
+        padding: 0
+        // style
+        background: none
+
+        h1
+            // posi
+            margin: 0
+            position: fixed
+            z-index: 20
+            // box
+            height: 50px
+            width: 100%
+            padding: 3px 1em 2px .5em
+            text-align: center
+            // style
+            background-color: #c62a22
+
+        ul
+            // posi
+            margin: 0 auto
+            position: relative
+            top: 60px
+            // box
+            display: block
+            height: 170px
+            width: 90%
+            max-width: 24em
+            padding: 0
+            // style
+            background-color: #f5f5f5
+            border: 1px solid #ddd
+            border-radius: 5px
+        ul li
+            // posi
+            //position: relative
+            // box
+            display: block
+            width: 100%
+            // typo 
+            text-align: left
+            // style
+            border-bottom: 1px solid #dedede
+            border-top: 1px solid #fff
+
+            &:first-child
+                border-top: 0
+            &:last-child
+                border-bottom: 0
+            &.current,
+            &:hover
+                background-color: #eee
+                border-top-color: #fafafa
+        ul a 
+            // box
+            display: block
+            padding: .25em 1em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

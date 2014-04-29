@@ -1,0 +1,75 @@
+
+@import css3/flex
+
+@mixin scale( $size: .55 ) 
+    -moz-transform:     scale( $size )
+    -webkit-transform:  scale( $size )
+    transform:          scale( $size )
+
+@mixin rotate(  $deg, $origin: left bottom ) 
+    -moz-transform: rotate(#{$deg})
+    -ms-transform: rotate(#{$deg})
+    -webkit-transform: rotate(#{$deg})
+    transform: rotate(#{$deg})
+    -moz-transform-origin: $origin
+    -webkit-transform-origin: $origin
+    transform-origin: $origin
+
+@mixin calc( $prop, $exp )  
+    #{$prop}: -moz-calc(#$exp})
+    #{$prop}: -webkit-calc(#$exp})
+    #{$prop}: calc(#$exp}) 
+
+@mixin fawesome( $icon: '' ) 
+    content: $icon
+    font-family: $font-awesome
+    font-style: normal
+    font-weight: normal
+
+@mixin NMB( $icon: '' ) 
+    content: $icon
+    font-family: $font-nmb
+    font-style: normal
+    font-weight: normal
+
+@mixin psebox( $width, $height, $posi: relative ) 
+    content: ''
+    display: block
+    position: $posi
+
+    height: $height
+    width: $width
+
+@mixin curve
+    /* Curve below nav menu and slides */
+    border-radius: 0  0 50% 50% / 0  0 7px 7px
+    box-shadow: rgba(#333, .3) 0 3px 10px
+
+@mixin decurve
+    border-radius: 0
+    box-shadow: none
+
+@mixin clearfix 
+    &:after 
+        clear: both
+        content: ''
+        display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

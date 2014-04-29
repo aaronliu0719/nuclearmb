@@ -1,0 +1,136 @@
+
+
+/* =================================
+ * Category 2: 核電好危險？ 
+ * ================================= */
+
+/* article nav */
+nav .article-menu > ul > li:nth-child(2) > div {
+	background-color: $article_nav-bg_color-cat2;
+
+
+	> ul {
+		color: darken($article_nav-text_color-cat2, 7%);
+
+		a {  color: $article_nav-text_color-cat2;  }
+	}
+
+
+	/* Nuclear icon as background on article menu */
+	&:after {
+		@include psebox(280px, 150px, absolute);
+		@include rotate( -1.1 );
+
+		// positioning
+		bottom: -12px;
+		right: -2em;
+		z-index: 0;
+
+		// style
+		background: url('images/nuclear-icon.png') 5% 10px no-repeat;
+		background-size: 280px;
+		opacity: .4;
+	}
+}
+
+/* Arrow towards to category menu */
+nav .article-menu > ul > li:nth-child(2) > a {
+	margin-left: -22px;
+	top: 58px;
+
+
+	&:before {
+		box-shadow: rgba(darken($article_nav-bg_color-cat2, 10%), .4) 4px 1px 3px inset;
+		background-color: $article_nav-bg_color-cat2;
+	}
+}
+
+
+
+/* =================================
+ * Category 3: 綠能與節電的迷思
+ * ================================= */
+
+/* article nav */
+nav .article-menu > ul > li:nth-child(3) > div {
+	background-color: $article_nav-bg_color-cat3;
+
+
+	> ul {
+		color: darken($article_nav-text_color-cat3, 15%);
+
+		a {  color: $article_nav-text_color-cat3;  }
+	}
+
+
+	/* Wind machine */
+	&:after {
+		@include psebox(220px, 150px, absolute);
+		@include NMB( '' );
+
+		// positioning
+		top: -65px;
+		right: 30px;
+		z-index: 0;
+
+		// typography
+		font-size: 210px;
+
+		// style
+		opacity: .4;
+	}
+}
+
+/* Arrow towards to category menu */
+nav .article-menu > ul > li:nth-child(3) > a {
+	margin-left: 114px;
+	top: 53px;
+
+
+	&:before {
+		box-shadow: rgba(darken($article_nav-bg_color-cat3, 10%), .4) 4px 1px 3px inset;
+		background-color: $article_nav-bg_color-cat3;
+	}
+}
+
+
+/* =================================
+ * Category 4: FAQ
+ * ================================= */
+
+/* article nav */
+nav .article-menu > ul > li:nth-child(4) > div {
+	background-color: $article_nav-bg_color-cat3;
+
+
+	> ul {
+		color: darken($article_nav-text_color-cat3, 15%);
+
+		a {  color: $article_nav-text_color-cat3;  }
+	}
+}
+
+/* Arrow towards to category menu */
+nav .article-menu > ul > li:nth-child(4) > a {
+	margin-left: 114px;
+	top: 55px;
+
+
+	&:before {
+		box-shadow: rgba(darken($article_nav-bg_color-cat3, 10%), .4) 4px 1px 3px inset;
+		background-color: $article_nav-bg_color-cat3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

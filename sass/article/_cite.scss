@@ -1,0 +1,62 @@
+
+
+a[id^="ref-"] {
+	font: .75em $font-Helvetica;
+	vertical-align: super;
+}
+
+
+
+footer div#cites {
+	color: #989286;
+	font: .75em/1.7 $font-Helvetica-zh;
+	left: 54em;
+	padding-top: 10em 1em 0 0;
+	position: absolute;
+	top: 0;
+	width: 24em;
+
+
+	.han-js-rendered & {
+		padding-top: 0;
+
+
+		ol li {
+			position: absolute;
+		}
+
+		.back-to-ref {
+			display: none;
+		}
+	}
+
+
+	ol li {
+		border-left: 1px dotted #bbb;
+		line-height: inherit;
+		list-style-position: outside;
+		padding: .75em .5em;
+		top: -.5em;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

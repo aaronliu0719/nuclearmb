@@ -1,0 +1,196 @@
+
+
+/**
+ * 關於我們
+ */
+
+$h1-color: #666
+$h2-color: #333
+
+#slide6 
+    // posi
+    padding: 1em 0 3em
+    // style
+    background-color: #ccc
+
+    a:link,
+    a:visited
+        color: #9c3c65
+    a:hover
+        color: #333
+    a:active
+        color: #8a4532
+
+    > div
+        // posi
+        margin: 0 auto
+        position: relative
+        // box
+        padding: 0
+        // box
+        max-width: 900px
+
+    ul.site-branches 
+        // position
+        margin: 0 0 1em 4.75em
+        // box
+        width: 13em
+        // typo
+        font-size: 1.3em
+
+        a:before 
+            // posi
+            margin: .3em 0 0 -.45em
+            // box
+            height: 1.7em
+            width: 1.7em
+            // style
+            background-size: 1.7em
+        p.des
+            color: #777
+            font-size: .7em
+            margin: -1.5rem 3.2rem 1.2rem
+
+    #about
+        +flexbox()
+        //+justify-content(center)
+        +flex-wrap(wrap)
+
+        article 
+            width: 25em
+        ul 
+            +align-self(flex-end)
+
+    h1 
+        color: $h1-color
+    h2 
+        // typo
+        font-family: $font-Minion_Pro-zh
+        font-size: 1.7em
+        font-weight: normal
+        line-height: 1.2em
+    h1 + h2 
+        // posi
+        margin-left: 1.5em
+        // box
+        max-width: 10em
+        // typo
+        text-indent: -1em
+        // style
+        color: $h2-color
+
+        span 
+            color: lighten($h2-color, 3%)
+            font-weight: bolder  
+    p 
+        color: #444
+        line-height: 1.7
+        text-align: justify
+
+    #copyright 
+        // posi
+        left: 50%
+        margin: 1em 0 3em 50px
+        position: relative
+        width: 20rem
+        // typo
+        font-family: $font-Gill_Sans-zh
+
+        h2 
+            // typo
+            font-size: 1.5em
+            // style
+            color: #666
+        ul 
+            // posi
+            margin: -.5em 0 0
+            // box
+            padding: 0
+            // typo
+            list-style: none
+
+        li:before 
+            +psebox(1em, 1em, absolute)
+            +fawesome('\f105')
+            // posi
+            left: -.75em
+            // style
+            color: #c3a22f  
+
+        a:link,
+        a:visited
+            color: #888
+        a:hover
+            color: #333
+        a:active
+            color: #8a4532    
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    #slide6
+        #about
+            width: 730px
+        article
+            width: 23em
+        ul
+            margin: 0 0 1.5em 2.5em
+
+/* 
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    #slide6 
+        #about
+            margin: 0 1em
+
+            ul
+                margin-top: 2em
+
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    #slide6
+        #about 
+            // posi
+            margin: 0 auto
+            left: 0
+            // box
+            display: block
+            width: auto
+            max-width: 25em
+        #about article
+            // posi
+            margin-left: 0
+            // box
+            width: 100%
+            padding: 0 1em 
+        #about ul
+            margin-left: 2em
+        #copyright
+            // posi
+            margin: 3em auto 0
+            left: 0
+            // box
+            width: 17em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

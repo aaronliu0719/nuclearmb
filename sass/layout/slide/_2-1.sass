@@ -1,0 +1,276 @@
+
+
+/** 
+ * 2.1 核電好危險？
+ */ 
+
+#slide2-1
+    // posi
+    padding: 0
+    // style
+    background-color: #d1f056
+
+    ol 
+        +flexbox()
+        +justify-content(center)
+        +flex-wrap(wrap)
+        // posi
+        margin: 0 auto
+        z-index: 5
+        // box
+        max-width: 900px
+        padding: 0
+        // typo
+        list-style: none
+
+    li 
+        //posi
+        position: relative
+        z-index: 10
+        // box
+        width: 33%
+        padding: 0
+        // typo
+        text-align: center
+
+        &:nth-child(2)
+            width: 34%
+        a 
+            // posi
+            display: block
+            // box            
+            height: 140px
+            width: 100%
+            padding: 45px 0 0
+            // typo
+            font-family: $font-Helvetica_thin-zh
+            font-size: 2em
+            // style
+            color: #fff
+
+            &:before 
+                font-size: 1.3em
+                display: inline-block
+                margin: -.25em .15em 0 0
+                vertical-align: top
+            &:hover 
+                background-color: #fff !important
+                        
+        &:nth-child(1) a 
+            $color: #fcc120
+            background-color: $color
+
+            &:before 
+                +NMB('\e007')
+            &:hover 
+                color: $color
+        &:nth-child(2) a 
+            $color: #56d9c9
+            background-color: $color
+
+            &:before 
+                +NMB('\e00a')
+            &:hover 
+                color: $color        
+        &:nth-child(3) a 
+            $color: #3ec7f3
+            background-color: $color
+
+            &:before 
+                +NMB('\e000')
+                font-size: 1.2em
+                //vertical-align: bottom
+            &:hover 
+                color: $color
+                                        
+    /* 左右背景融入按鈕顏色 */
+    &:before,
+    &:after 
+        +psebox(100%, 100%, absolute)
+        background-color: #fcc120
+        left: 0
+        top: 0
+        z-index: 0
+    &:after 
+        background-color: #3ec7f3
+        left: 50%
+
+#slide2-2 
+    // box
+    height: 500px
+    padding: 0
+    // style
+    background: #000 url(images/slide2/yellow_stripe.png)
+    box-shadow: rgba(#333, .7) 0 5px 10px
+
+    > ol 
+        // posi
+        margin: 0 0 0 -430px
+        position: relative
+        left: 50%
+        z-index: 0
+        // box
+        height: 100%
+        width: 450px
+        padding: 1.2em 1.5em 1em
+        // typo
+        list-style: none
+        // style
+        background-color: #333
+        box-shadow: #111 5px 0 10px inset, #111 -5px 0 10px inset
+        color: #a6967e
+
+        a:link,
+        a:visited 
+            // typo
+            font-size: 1.7em
+            // style
+            color: #b59a2d
+
+        /* === graphic icons === */
+        li ul:before 
+            +psebox(.95em, 2em, absolute)
+            // posi
+            line-height: 2em
+            overflow: hidden
+            z-index: -1
+            // style
+            font-size: 9em
+            color: #666
+            opacity: .2
+
+        // nuclear power plants
+        li:first-child ul:before 
+            +NMB('')
+            // posi
+            bottom: -.45em
+            left: 0
+            text-indent: -.05em
+        
+        // truck
+        li:nth-child(2) ul:before 
+            +fawesome('\f0d1')
+            // posi
+            bottom: .6em
+            right: 0
+            // box
+            width: .95em
+            // style
+            font-size: 7em
+            color: #aaa
+
+        // globe
+        li:nth-child(3) ul:before 
+            +NMB('')
+            // posi
+            top: -.2em
+            left: 0
+            // box
+            width: 1.75em
+            text-indent: -.4em
+            // style
+            color: #efdb53
+            font-size: 13em
+            opacity: .05
+
+    ul 
+        list-style: none
+        padding: .1em 0 1em 1.7em
+
+        li:before 
+            +psebox(1em, 1em, absolute)
+            +fawesome('\f02b')
+            // posi
+            margin: .25em 0 0 -1.3em
+            // typo
+            font-size: .8em
+            // style
+            opacity: .5
+
+        li:hover
+            color: #d78a52
+
+
+            &:before 
+                opacity: .9          
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 999px)
+    #slide2-1
+        ol
+            height: 125px
+
+        li a 
+            font-size: 1.7em
+
+    #slide2-2 > ol 
+        margin: 0 0 0 -20px
+
+/*
+ * Some tablets
+ */
+@media only screen and (max-width: 767px)
+    #slide2-1 
+        padding: 0
+
+        ol li a 
+            font-size: 1.6em
+
+    #slide2-2 > ol 
+        margin: 0 0 0 auto
+        left: 0
+
+/* 
+ * iPhone
+ */
+@media only screen and (max-width: 639px)
+    #slide2-1 
+        margin-top: 0
+
+        ol
+            // box
+            display: block
+            height: auto
+            width: 100% 
+        li
+            // box
+            display: block
+            width: 100% !important
+
+        ol li a 
+            // box
+            height: auto
+            padding: .125em 1.5em .125em 3em
+            // typo
+            font-size: 1.2em
+            text-align: left
+
+    #slide2-2
+        ol 
+            // box
+            width: 25em
+            padding: 2em .5em 3em
+        li li 
+            // typo
+            font-size: .95em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

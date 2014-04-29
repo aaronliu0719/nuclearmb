@@ -66,17 +66,25 @@ function sleep(milliseconds) {
     }
 }
 
-function init_all(){
-    if(load_slice<4)
-    {
-        setTimeout(init_all, 100);
-        return;
-    }
+
+$(document).ready(function ($) {
+    window.current_slide = 1;
+    //init_template();
     init_slider();
     init_content_slider();
 
+    /*
+    while(template_progress<template_count)
+    {
+        console.log("sleep 500");
+        sleep(500);
+    }
+    */
+
     init_router();
     init_location();
+    
+
 
     $('.fancybox').fancybox(
         {
@@ -87,29 +95,7 @@ function init_all(){
             }
         }
     );
-}
 
-var load_slice = 0;
-
-$(document).ready(function ($) {
-    window.current_slide = 1;
-    //init_template();
-
-    
-    $("#slide2_container").load("inc/about_nuke.html", function(){
-        load_slice++;
-    });
-    $("#slide3_container").load("inc/green_energy.html", function(){
-        load_slice++;
-    });
-    $("#slide8_container").load("inc/nuke_friends.html", function(){
-        load_slice++;
-    });
-    $("#slide9_container").load("inc/about_us.html", function(){
-        load_slice++;
-    });
-
-    init_all();
 
 
 });

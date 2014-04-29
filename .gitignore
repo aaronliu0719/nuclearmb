@@ -1,3 +1,6 @@
+\#dataimg
+\#psd
+
 images/Iconr
 images/slide1/Iconr
 images/slide2/Iconr
@@ -28,3 +31,5 @@ history/vendor/qunit/Iconr
 history/vendor/qunit/qunit/Iconr
 history/vendor/qunit/test/Iconr
 .DS_Store
+
+compile.sh
