@@ -51,8 +51,8 @@ nav.layout
     a:hover,
     a:active
         color: #057f87
-
-    body.index & .home a 
+    a:link.current-slide,
+    a:link.home
         color: #c24a4a
         font-weight: bold
 
@@ -166,7 +166,7 @@ nav.layout
                 border-top: 0
             &:last-child
                 border-bottom: 0
-            &.current,
+            &.current-slide,
             &:hover
                 background-color: #eee
                 border-top-color: #fafafa

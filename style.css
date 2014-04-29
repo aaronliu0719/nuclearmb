@@ -2161,7 +2161,8 @@ nav.layout {
   nav.layout a:hover,
   nav.layout a:active {
     color: #057f87; }
-  body.index nav.layout .home a {
+  nav.layout a:link.current-slide,
+  nav.layout a:link.home {
     color: #c24a4a;
     font-weight: bold; }
 
@@ -2245,7 +2246,7 @@ nav.layout {
         border-top: 0; }
       nav.layout ul li:last-child {
         border-bottom: 0; }
-      nav.layout ul li.current, nav.layout ul li:hover {
+      nav.layout ul li.current-slide, nav.layout ul li:hover {
         background-color: #eeeeee;
         border-top-color: #fafafa; }
     nav.layout ul a {
@@ -2657,10 +2658,10 @@ nav.layout {
       #slide2 figure figcaption,
       #slide2 figure footer {
         left: 0;
-        padding-bottom: 0.5em;
         top: -1.5em;
         height: auto;
-        width: 20em; }
+        width: 20em;
+        padding-bottom: 0.5em; }
       #slide2 figure footer {
         background: none;
         top: 450px;

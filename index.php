@@ -29,13 +29,13 @@
 <nav class="layout">
 	<h1 id="site-title"><a href="//nuclearmb.org/" class="site-logo">核能流言終結者</a></h1>
 
-	<ul>
-		<li class="home current"><a href="/">核能流言終結者</a>
-		<li><a href="#!/核電好危險？/">核電好危險？</a>
-		<li><a href="#!/綠能與節電的迷思/">綠能與節電的迷思</a>
-		<!--<li><a href="#!/faq/"><abbr lang="en-GB" title="常見問題，Frequently Asked Questions">FAQ</abbr></a>-->
-		<li><a href="#!/理性大串連/">理性大串連</a>
-		<li><a href="#!/關於我們/">關於我們</a>
+	<ul id="site-cat-menu">
+		<li><a class="home" href="#!/核能流言終結者" data-slideto="slide1">核能流言終結者</a>
+		<li><a href="#!/核電好危險？" data-slideto="slide2">核電好危險？</a>
+		<li><a href="#!/綠能與節電的迷思" data-slideto="slide3">綠能與節電的迷思</a>
+		<!--<li><a href="#!/faq" data-slideto="slide4"><abbr lang="en-GB" title="常見問題，Frequently Asked Questions">FAQ</abbr></a>-->
+		<li><a href="#!/理性大串連" data-slideto="slide5">理性大串連</a>
+		<li><a href="#!/關於我們" data-slideto="slide6">關於我們</a>
 	</ul>
 </nav>
 

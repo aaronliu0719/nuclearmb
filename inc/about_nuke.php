@@ -20,7 +20,7 @@
 				<a ref="alternate" class="flickr" href="http://www.flickr.com/photos/karelh/9531207088/">View it on Flickr</a>
 		</footer>
 	</figure>
-	<button class="dashboard-switch"><span>終結</span>流言</button>
+	<button id="rumour-terminator" data-slideto="slide2-1"><span>終結</span>流言</button>
 </div>
 
 <div class="slide" id="slide2-1">
