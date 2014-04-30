@@ -1,10 +1,10 @@
 
 
 all ::
-	sass --watch sass:.
+	sass --watch sass:. --style compressed
 
 
-x ::
+jade ::
 	jade -Pw *.jade | sass --watch sass:.
 
 
