@@ -20,10 +20,11 @@
 				<a ref="alternate" class="flickr" href="http://www.flickr.com/photos/karelh/9531207088/">View it on Flickr</a>
 		</footer>
 	</figure>
-	<button id="rumour-terminator" data-slideto="slide2-1"><span>終結</span>流言</button>
+	<button id="rumour-terminator" data-slide-to="slide2-1"><span>終結</span>流言</button>
 </div>
 
 <div class="slide" id="slide2-1">
+	<h1 hidden>核電好危險？</h1><small hidden>之一</small>
 	<ol>
 		<li><a href="">輻射ABC</a>
 		<li><a href="">台灣的核電廠</a>
@@ -32,6 +33,7 @@
 </div>
 
 <div class="slide" id="slide2-2">
+	<h1 hidden>核電好危險？</h1><small hidden>之二</small>
 	<ol>
 		<li>
 			<a href="">核廢料禍延子孫？</a>
