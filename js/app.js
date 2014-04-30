@@ -87,6 +87,18 @@ var
     INIT,
     DEVIATION,
 
+    slide = function( top, callback ) {
+        $b$h
+        .animate(
+            {
+                scrollTop: top
+            }, 
+            '500',
+            'swing',
+            $.isFunction( callback ) ? callback() : ''
+        )
+    },
+
     niche = function( somePoint ) {
         ID.forEach(function( id, i ) {
             var
@@ -97,7 +109,7 @@ var
             ;
 
             if ( somePoint >= start && somePoint <= end ) {
-                console.log( title+', '+ POSI['end'][i-1] +', '+ start )
+                //console.log( title+', '+ POSI['end'][i-1] +', '+ start )
 
                 $body
                 .attr('data-current-slide', id)
@@ -144,24 +156,22 @@ $.fn.slidify = function( devi, minus ) {
             $this = $( this ),
             target = $this.attr('data-slide-to'),
             $target = $('#' + target),
+
             top = parseInt( $target.position().top ),
             text = $this.text()
         ;
 
-        $( this ).on('click', function() {
+        $( this )
+        .on('click', function() {
             var
                 posi = minus ? top - DEVIATION : top + DEVIATION
             ;
 
-            $b$h
-            .animate({ scrollTop: posi }, '500', 'swing', function() {
-            })
+            slide( posi )
         })
     })
 
     $win
-    .on('hashchange', function() {
-    })
     .on('ready resize', function() {
         POSI['start'] = []
         POSI['end'] = []
@@ -177,7 +187,7 @@ $.fn.slidify = function( devi, minus ) {
             ID[i] = $this.attr('id') || ''
             TITLE[i] = $this.find('h1').eq(0).text() || origTitle
             POSI['start'][i] = minus ? top - DEVIATION : top + DEVIATION
-            POSI['end'][i] = height + POSI['start'][i] - 11
+            POSI['end'][i] = height + POSI['start'][i] - 11 // small workaround form `margin-top` of each slide
 
             if ( $this.hasClass('init-slide') ) {
                 INIT = ID[i]
@@ -190,6 +200,22 @@ $.fn.slidify = function( devi, minus ) {
         LISTENER = setTimeout(function() {
             niche( $doc.scrollTop() )
         }, 500)
+    })
+    .on('hashchange', function() {
+        var
+            now = hash.get(),
+            posi
+        ;
+
+        TITLE.forEach(function( title, i ) {
+            if ( posi ) {
+                return
+            } else if ( now === title ) {
+                posi = POSI['start'][i]
+            }
+        })
+      
+      slide( posi )
     })
 }
 
