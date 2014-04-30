@@ -19,7 +19,27 @@ $doc
 .on('ready', function() {
     $body.slidify( nav_height, true )
 })
+.on('click', '.mobile-device .mobile-device-menu-toggler', function( ev ) {
+    ev.preventDefault()
 
+    $('#site-cat-menu').toggleClass('on')
+})
+
+$win
+.on('ready resize', function() {
+    if ( $win.width() < 690 ) {
+        $body.addClass('mobile-device')
+    } else {
+        $body.removeClass('mobile-device')
+    }
+})
+.on('ready scroll', function() {
+    if ( $doc.scrollTop() < 40 ) {
+        $('#site-cat-menu').addClass('on')
+    } else {
+        $('#site-cat-menu').removeClass('on')
+    }
+})
 
 })( window, document, jQuery );
 
@@ -34,7 +54,6 @@ var
     $win = $( window ),
     $body = $('body'),
     $b$h = $('body, html'),
-
 
     hash = {
         clean: true,
@@ -85,6 +104,7 @@ var
     POSI = [],
     INIT,
     DEVIATION,
+    SCROLLUP,
 
     slide = function( top, callback ) {
         $b$h
@@ -200,20 +220,30 @@ $.fn.slidify = function( devi, minus ) {
             niche( $doc.scrollTop() )
         }, 500)
     })
+    .on('mousewheel', function( ev ) {
+        if ( ev.originalEvent.wheelDelta >= 0 ) {
+            SCROLLUP = true
+        }
+    })
     .on('hashchange', function() {
         var
             now = hash.get(),
+            currentPoint = $doc.scrollTop(),
             breaker
         ;
 
         TITLE.forEach(function( title, i ) {
             if ( breaker ) {
                 return
-            } else if ( now === title ) {
+            }
+
+            if ( now === title ) {
                 breaker = true
 
-                document.title = now
-                slide( POSI['start'][i] )
+                if ( ID[i] != INIT || SCROLLUP ) {
+                    document.title = now
+                    slide( POSI['start'][i] )
+                }
             }
         })
     })

@@ -27,7 +27,7 @@
 <div id="fb-root"></div>
 
 <nav class="layout">
-    <h1 id="site-title"><a href="//nuclearmb.org/" class="site-logo">核能流言終結者</a></h1>
+    <h1 id="site-title"><a href="/" class="site-logo mobile-device-menu-toggler">核能流言終結者</a></h1>
 
     <ul id="site-cat-menu">
         <li><a class="home" href="#!/核能流言終結者" data-slide-to="slide1">核能流言終結者</a>

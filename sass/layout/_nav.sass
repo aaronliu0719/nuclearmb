@@ -123,8 +123,9 @@ nav.layout
     nav.layout
         // posi
         margin: 0
-        position: relative
+        position: fixed
         // box
+        display: block
         height: 50px
         width: 100%
         padding: 0
@@ -134,7 +135,7 @@ nav.layout
         h1
             // posi
             margin: 0
-            position: fixed
+            left: 0
             z-index: 20
             // box
             height: 50px
@@ -146,11 +147,9 @@ nav.layout
 
         ul
             // posi
-            margin: 0 auto
-            position: relative
-            top: 60px
+            margin: .7em auto
             // box
-            display: block
+            display: none
             height: 170px
             width: 90%
             max-width: 24em
@@ -184,6 +183,9 @@ nav.layout
             display: block
             padding: .25em 1em
 
+        ul.on
+            display: block
+        
 
 
 
