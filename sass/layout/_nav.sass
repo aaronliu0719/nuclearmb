@@ -38,12 +38,12 @@ nav.layout
         &:nth-child(2)
             // 問號空格kerning
             margin-right: .6em
-
         &:last-child
             margin: 0
-
         html.han-biaodian-pro & :not(:lang(zh)):not(:lang(ja))
             font-family: $font-Gill_Sans
+        a 
+            overflow: hidden
 
     a:link,
     a:visited
@@ -51,10 +51,20 @@ nav.layout
     a:hover,
     a:active
         color: #057f87
-    a:link.current-slide,
-    a:link.home
-        color: #c24a4a
-        font-weight: bold
+
+/*
+ * Correspond to current slide
+ */
+[data-current-slide='slide1']   nav.layout a[data-slide-to="slide1"],
+[data-current-slide='slide2']   nav.layout a[data-slide-to="slide2"],
+[data-current-slide='slide2-1'] nav.layout a[data-slide-to="slide2"],
+[data-current-slide='slide2-2'] nav.layout a[data-slide-to="slide2"],
+[data-current-slide='slide3']   nav.layout a[data-slide-to="slide3"],
+[data-current-slide='slide4']   nav.layout a[data-slide-to="slide4"],
+[data-current-slide='slide5']   nav.layout a[data-slide-to="slide5"],
+[data-current-slide='slide6']   nav.layout a[data-slide-to="slide6"],
+    color: #c24a4a
+    font-weight: bold
 
 /* 
  * iPad
@@ -72,7 +82,7 @@ nav.layout
             width: 560px
 
 @media only screen and (max-width: 999px) and (min-width: 690px)
-    nav.layout li.home a
+    nav.layout li a.home
         // posi
         display: inline-block
         position: relative
@@ -94,7 +104,7 @@ nav.layout
             font-size: 1.4em
             color: #056087
 
-            // 如果在首頁、第一張slide，房子顯示為紅色
+            // 如果在首頁，房子顯示為紅色
             body.index &
                 color: #c24a4a
         &:hover:before
@@ -105,7 +115,6 @@ nav.layout
 @media only screen and (max-width: 767px)
     nav.layout
         h1
-
 
 /* 
  * iPhone

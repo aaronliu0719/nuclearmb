@@ -16,9 +16,9 @@
     transform-origin: $origin
 
 @mixin calc( $prop, $exp )  
-    #{$prop}: -moz-calc(#$exp})
-    #{$prop}: -webkit-calc(#$exp})
-    #{$prop}: calc(#$exp}) 
+    #{$prop}: -moz-calc(#{$exp})
+    #{$prop}: -webkit-calc(#{$exp})
+    #{$prop}: calc(#{$exp}) 
 
 @mixin fawesome( $icon: '' ) 
     content: $icon
