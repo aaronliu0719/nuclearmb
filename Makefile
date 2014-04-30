@@ -1,7 +1,7 @@
 
 
 all ::
-	sass --watch sass:.
+	sass --watch sass:. --style compressed
 
 
 x ::
