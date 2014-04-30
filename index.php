@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="description" content="核能流言終結者——理性思考核能，破除誇大恐懼">
-    <meta name="keywords" content="核能,核四,龍門電廠,核電,台電,擁核,反核,劉黎兒,方儉,部落客醫師楊斯棓,媽媽監督核電廠聯盟,綠色公民行動聯盟,反核部隊,綠色消費者基金會,爸爸非核陣線">
-
+    <meta name="keywords" content="核能, 核四, 龍門電廠, 核電, 台電, 擁核, 反核, 劉黎兒, 方儉, 部落客醫師楊斯棓, 媽媽監督核電廠聯盟, 綠色公民行動聯盟, 反核部隊, 綠色消費者基金會, 爸爸非核陣線">
+	
     <meta property="og:title" content="核能流言終結者">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/slide1/nuke_buster.jpg">

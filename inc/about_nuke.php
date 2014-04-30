@@ -24,7 +24,7 @@
 </div>
 
 <div class="slide" id="slide2-1">
-	<h1 hidden>核電好危險？</h1><small hidden>之一</small>
+	<h1 hidden>核電好危險？<small hidden>之二</small></h1>
 	<ol>
 		<li><a href="">輻射ABC</a>
 		<li><a href="">台灣的核電廠</a>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="slide" id="slide2-2">
-	<h1 hidden>核電好危險？</h1><small hidden>之二</small>
+	<h1 hidden>核電好危險？<small hidden>之二</small></h1>
 	<ol>
 		<li>
 			<a href="">核廢料禍延子孫？</a>

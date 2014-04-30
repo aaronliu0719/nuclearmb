@@ -8,8 +8,7 @@
 var 
     $win = $( window ),
     $doc = $( document ),
-    $body = $('body'),
-    $slide = $('.slide'),
+    $body = $('body')
 
     nav_height = function() {
         return $('nav.layout').outerHeight()
@@ -147,7 +146,7 @@ $.fn.slidify = function( devi, minus ) {
         $this = $( this )
     ;
 
-    DEVIATION = $.isFunction(devi) ? devi() : 0
+    DEVIATION = $.isFunction( devi ) ? devi() : 0
 
     $this
     .find('[data-slide-to]')
@@ -173,6 +172,7 @@ $.fn.slidify = function( devi, minus ) {
 
     $win
     .on('ready resize', function() {
+        DEVIATION = $.isFunction( devi ) ? devi() : 0
         POSI['start'] = []
         POSI['end'] = []
 
