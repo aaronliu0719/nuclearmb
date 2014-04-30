@@ -61,7 +61,7 @@ var
 
         assign: function( val, title ) {
             var
-                title = title !== null ? title : true
+                title = ( title != null && typeof title != undefined ) ? title : true
             ;
 
             window.location.hash = val !== '' ? '!/' + this.encode( val ) : ''
@@ -155,14 +155,13 @@ $.fn.slidify = function( devi, minus ) {
             $this = $( this ),
             target = $this.attr('data-slide-to'),
             $target = $('#' + target),
-
-            top = parseInt( $target.position().top ),
             text = $this.text()
         ;
 
         $( this )
         .on('click', function() {
             var
+                top = parseInt( $target.position().top ),
                 posi = minus ? top - DEVIATION : top + DEVIATION
             ;
 
@@ -204,18 +203,19 @@ $.fn.slidify = function( devi, minus ) {
     .on('hashchange', function() {
         var
             now = hash.get(),
-            posi
+            breaker
         ;
 
         TITLE.forEach(function( title, i ) {
-            if ( posi ) {
+            if ( breaker ) {
                 return
             } else if ( now === title ) {
-                posi = POSI['start'][i]
+                breaker = true
+
+                document.title = now
+                slide( POSI['start'][i] )
             }
         })
-      
-      slide( posi )
     })
 }
 
