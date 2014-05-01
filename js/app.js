@@ -223,7 +223,7 @@ $.fn.slidify = function( devi, minus ) {
 
         LISTENER = setTimeout(function() {
             niche( $doc.scrollTop() )
-        }, 500)
+        }, 50)
     })
     .on('mousewheel', function( ev ) {
         if ( ev.originalEvent.wheelDelta >= 0 ) {
