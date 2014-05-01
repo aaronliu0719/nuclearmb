@@ -1,0 +1,2 @@
+timezone:   'Asia/Taipei'
+exclude:    ['sass', 'CNAME', 'Makefile', 'README.md']
