@@ -1,7 +1,7 @@
 
 
 /*!
- *
+ * Index initiation 
  */
 ;(function( window, document, $, undefined ) {
 
@@ -22,7 +22,9 @@ $doc
 .on('click', '.mobile-device .mobile-device-menu-toggler', function( ev ) {
     ev.preventDefault()
 
-    $('#site-cat-menu').toggleClass('on')
+    if ( $doc.scrollTop() > 40 ) {
+        $('#site-cat-menu').toggleClass('on')
+    }
 })
 
 $win
