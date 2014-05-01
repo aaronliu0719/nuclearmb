@@ -208,7 +208,10 @@ $.fn.slidify = function( devi, minus ) {
             ID[i] = $this.attr('id') || ''
             TITLE[i] = $this.find('h1').eq(0).text() || origTitle
             POSI['start'][i] = minus ? top - DEVIATION : top + DEVIATION
-            POSI['end'][i] = height + POSI['start'][i] - 11 // small workaround form `margin-top` of each slide
+            POSI['end'][i] = height + POSI['start'][i] 
+
+            // small workaround form `margin-top` of each slide
+            POSI['end'][i] = POSI['end'][i] - 11
 
             if ( $this.hasClass('init-slide') ) {
                 INIT = ID[i]
