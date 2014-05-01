@@ -1,7 +1,7 @@
 
 
 all ::
-	sass --watch sass:. --style compressed
+	sass --watch sass:. --style compressed | jekyll serve --watch
 
 
 jade ::
