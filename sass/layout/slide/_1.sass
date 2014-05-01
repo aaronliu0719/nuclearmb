@@ -51,7 +51,7 @@
 		text-align: justify
 
 	ul.site-branches
-		width: 13em
+		width: 17em
 
 #nuke-buster
 	// box
@@ -60,8 +60,6 @@
 	img
 		margin-top: 5.5em
 		width: 100%
-	iframe.fb-like-iframe
-		margin-top: 0px
 
 #site-description
 	// box
@@ -122,9 +120,7 @@
 			p,
 			ul.site-branches 
 				margin-left: 48px
-				width: 24em
-			ul > li 
-				width: 12em
+				width: 24e
 
 /* 
  * Some tablets
@@ -176,13 +172,25 @@
 		// posi
 		top: 0
 		// box
-		padding-top: 6em
+		padding-top: 9em
+
+		.fb-like-iframe 
+			// posi
+			position: absolute
+			right: 0
+			top: 16em
 
 @media only screen and (max-width: 639px)
 	#slide1
 		// posi
 		top: 0
 
+		.fb-like-iframe 
+			// posi
+			margin-left: -150px
+			left: 50%
+			right: auto
+			top: 15.5em
 		#nuke-buster
 			// posi
 			float: none
@@ -190,7 +198,6 @@
 			img
 				// box
 				display: none
-
 		#site-description
 			// posi
 			margin: 0 auto
@@ -217,7 +224,6 @@
 				// box
 				max-width: 25em
 				width: auto
-
 		#site-license
 			// posi
 			margin: 0 auto 3em
