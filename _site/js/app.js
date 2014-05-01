@@ -210,7 +210,7 @@ $.fn.slidify = function( devi, minus ) {
             POSI['start'][i] = minus ? top - DEVIATION : top + DEVIATION
             POSI['end'][i] = height + POSI['start'][i] 
 
-            // small workaround form `margin-top` of each slide
+            // small workaround from `margin-top` of each slide
             POSI['end'][i] = POSI['end'][i] - 11
 
             if ( $this.hasClass('init-slide') ) {
