@@ -1,0 +1,97 @@
+
+.article
+    background-color: #f3f3f3
+
+.article nav.layout
+    // posi
+    position: relative
+
+article.layout
+    // posi
+    +contentbox
+    
+    //left: 50%
+    top: 6em
+    // box
+    width: 35em
+    padding: 0 1em 10em
+    +calc('padding-right', '900px - 35em')
+    // typo
+    color: #333
+
+    &:lang(zh)
+        // typo
+        text-align: justify
+    header,
+    h1
+        // typo
+        color: rgba(17, 111, 109, 0.7)
+        text-align: center
+
+        a:link,
+        a:visited
+            color: inherit
+    h1
+        // typo
+        font-family: $font-Minion_Pro-zh
+        font-size: 2.2em
+        font-weight: normal
+
+        a:link,
+        a:visited
+            // style
+            color: #d54354
+            text-shadow: .5px .5px 0px darken(#d54354, 7%), 1px 1px 1px lighten(#d2ca66, 5%)
+        a:hover
+            color: #de4354
+            text-shadow: .5px .5px 0px darken(#d54354, 7%), 1px 1px 2px #d2ca66
+        a:active
+            color: darken(#d54354, 5%)
+    .author,
+    .editor
+        // posi
+        position: relative
+        // box
+        display: inline-block
+
+        &:before
+            // posi
+            position: absolute
+            top: -1.3em
+            // typo
+            color: #999
+            content: '作者'
+            font-size: .7em
+    .editor:before
+        content: '編者'
+
+    h2,
+    h3,
+    h4,
+    h5
+        & + p
+            margin-top: -1em
+    main 
+        // typo
+        //font-size: 18px
+    aside 
+        // posi
+        position: absolute
+        margin-top: -3em
+        left: 40em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

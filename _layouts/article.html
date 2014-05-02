@@ -1,0 +1,76 @@
+---
+layout: article
+---
+
+<!DOCTYPE HTML>
+<html lang="zh-Hant" class="no-js han-biaodian-pro han-biaodian-pro-cns han-la">
+<head>
+    <meta charset="UTF-8">
+    <title> {{ page.title }} — 核能流言終結者</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}style.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="核能流言終結者——理性思考核能，破除誇大恐懼">
+    <meta name="keywords" content="核能, 核四, 龍門電廠, 核電, 台電, 擁核, 反核, 劉黎兒, 方儉, 部落客醫師楊斯棓, 媽媽監督核電廠聯盟, 綠色公民行動聯盟, 反核部隊, 綠色消費者基金會, 爸爸非核陣線">
+
+    <!--[if lte IE 8]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body class="article">
+<!--[if lte IE 8]>
+    <p class="browsehappy">你使用的瀏覽器太<em>老舊</em>啦。馬上<a href="//browsehappy.com/">升級你的瀏覽器</a>以提升上網體驗。</p>
+<![endif]-->
+
+{% include nav.html %}
+
+<article class="layout">
+    <header>
+        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+
+        <a class="author" href="{{ page.author_page }}">{{ page.author }}</a><!--
+        -->·<!--
+        --><a class="editor" href="{{ page.editor_page }}">{{ page.editor }}</a><!--
+        -->／<!--
+        --><a href="{{ page.url }}"><time datetime="{{ page.date }}">{{ page.date | date: "%Y年%m月%d日" }}</time></a>
+    </header>
+    
+    <main>
+    {{ content }}
+    </main>
+
+    <footer>
+        <ol id="article-reference">
+            <li id="ref-1"><a href="#note-1"></a>
+        </ol>
+
+        <div class="copyright">
+            <p>這篇文章使用<a href="//creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW">創用CC「姓名標示﹣相同方式分享﹣3.0﹣台灣」</a>授權條款授權，歡迎在符合上述條件的情況下分享、轉載。</p>
+
+            <nav>
+                <ul>
+                    <li><button class="twr">分享到Twitter</button>
+                    <li><button class="fb">分享到Facebook</button>
+                    <li><button class="goog">分享到Google+</button>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</article>
+
+<script src="{{ site.baseurl }}js/jquery-2.1.0.min.js"></script>
+<script src="{{ site.baseurl }}js/han.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50557199-1', 'nuclearmb.org');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
