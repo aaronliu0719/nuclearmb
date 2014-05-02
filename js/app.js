@@ -85,7 +85,7 @@ var
                 title = ( title != null && typeof title != undefined ) ? title : true
             ;
 
-            window.location.hash = val !== '' ? '!/' + this.encode( val ) : ''
+            window.location.hash = val !== '' ? '/' + this.encode( val ) : ''
 
             if ( title ) {
                 document.title = val
