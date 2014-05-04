@@ -1,27 +1,44 @@
 
 .article
-    background-color: #f3f3f3
-
-.article nav.layout
     // posi
     position: relative
+    // style
+    background-color: #f7f7f7
+
+    nav.layout
+        // posi
+        position: relative
 
 article.layout
     // posi
-    +contentbox
-    
-    //left: 50%
     top: 6em
     // box
-    width: 35em
-    padding: 0 1em 10em
-    +calc('padding-right', '900px - 35em')
+    width: 33em
+    padding: 0 .5em 10em
     // typo
     color: #333
+    font-family: $font-Gill_Sans-zh
+    font-size: 18px
 
     &:lang(zh)
+        p,
+        li
+            // typo
+            line-height: 1.8
+            text-align: justify
+        strong,
+        b,
+        th,
+        dt
+            // typo
+            font-family: inherit
+            font-weight: 600
+        strong *:not(:lang(zh)):not(:lang(ja))
+            // typo
+            font-family: $font-Gill_Sans
+    *:not(:lang(zh)):not(:lang(ja))
         // typo
-        text-align: justify
+        font-family: $font-Gill_Sans
     header,
     h1
         // typo
@@ -33,20 +50,24 @@ article.layout
             color: inherit
     h1
         // typo
-        font-family: $font-Minion_Pro-zh
+        font-family: $font-article-heading-zh
         font-size: 2.2em
         font-weight: normal
 
+        &:not(:lang(zh)):not(:lang(ja))
+            font-family: $font-article-heading
         a:link,
         a:visited
             // style
             color: #d54354
-            text-shadow: .5px .5px 0px darken(#d54354, 7%), 1px 1px 1px lighten(#d2ca66, 5%)
+            text-shadow: .5px .5px 0px darken(#d54354, 7%)
         a:hover
             color: #de4354
             text-shadow: .5px .5px 0px darken(#d54354, 7%), 1px 1px 2px #d2ca66
         a:active
             color: darken(#d54354, 5%)
+        hanla 
+            font-size: .4em
     .author,
     .editor
         // posi
@@ -64,28 +85,274 @@ article.layout
             font-size: .7em
     .editor:before
         content: '編者'
-
+    .author.and:after
+        // typo
+        content: '·'
+    time
+        // box
+        padding-left: 1em
     h2,
     h3,
     h4,
     h5
-        & + p
+        & + p,
+        & + ul,
+        & + ol
             margin-top: -1em
+    h2 + h3,
+    h2 + h4,
+    h2 + h5,
+    h3 + h4,
+    h3 + h5
+        margin-top: -1em
+    h2
+        // box
+        margin-bottom: 1em
+        // typo
+        font-family: $font-Minion_Pro-zh
+        // style
+        border-bottom: 1px solid #ddd
     main 
         // typo
         //font-size: 18px
+    img
+        // box
+        // max-height: 20em
+        max-width: 100%
+        text-align: center
+    ol,
+    ul
+        // box
+        padding-left: 0
+    .reference ol
+        // typo
+        font-size: .8em
+        text-align: left
+    ul
+        // typo
+        list-style: square
+    p.equation
+        // posi
+        margin: 1em
+        // box
+        min-height: 3em
+        padding: .5em 1.5em
+        // typo
+        font-size: 1.5em
+    figure 
+        // posi
+        margin: 0 !important
+        position: relative
+        // box
+        width: 100%
+    figcaption,
     aside 
         // posi
         position: absolute
-        margin-top: -3em
-        left: 40em
+        left: 34em
+        // box
+        width: .8*12em
+        padding-top: 7px
 
+        &:before
+            +psebox(4em, .75em)
+            // posi
+            margin-top: -2px
+            // style
+            border-top: 1px solid #ddd
+        p,
+        dl,
+        li
+            // posi
+            margin: 0
+            // typo
+            color: #8a8a8a
+            font-size: .8em
+            line-height: 1.5
+            text-align: left
+        dt 
+            // typo
+            font-weight: bold
+        dd + dt
+            // posi
+            margin-top: .5em
+        dd
+            // posi
+            margin: 0
+    figcaption
+        // posi
+        position: absolute
+        left: auto
+        right: -11.75em
+        top: 0
+        // box
+        width: 10em
+        // typo
+        color: #8a8a8a
+    aside:nth-of-type(2n),
+    table.wide + aside
+        // posi
+        left: -10.5em
 
+        *
+            // typo
+            text-align: right
+        &:before
+            // posi
+            margin: -10px 0 0 auto
+    table.wide + aside
+        // box
+        //width: 9.6em
+        padding-top: 2.45em
+    table
+        // posi
+        margin: 2.5rem 0 3rem
+        // typo
+        color: #444
+        font-size: .9em
+        line-height: 1.7
 
+        &.narrow
+            // posi
+            margin: 1.5rem auto 2rem
+            // box
+            width: 60%
+        &.wide
+            // box
+            width: 120%
+    thead
+        // typo
+        color: darken(#057f87, 5%)
+        text-align: left
+        // style
+        border-bottom: 2px solid #999
+    th,
+    td
+        // box
+        padding: .75em .5em
+        vertical-align: top
+        // style
+        border-bottom: 1px solid
+        border-color: #ddd
+    tr:last-child td
+        border: 0
+    tbody tr:hover
+        th,
+        td
+            background-color: rgba(#fff, .5)
+    footer
+        // posi
+        margin-top: 3em
+        position: relative
+        // style
+        border-top: 2px solid #ddd
 
+        ul
+            // posi
+            position: absolute
+            left: .25em
+            top: -.35em
+        li  
+            // posi
+            margin: 0 .125em
+            // box
+            display: inline-block
+            overflow: hidden
+            // typo
+            list-style: none
+        li button
+            // box
+            height: 1.5em
+            width: 1.5em
+            // typo
+            color: transparent !important
+            // style
+            background-color: #ccc
+            border-radius: 1.5em
+        button
+            &:before
+                +fawesome
+                // posi
+                vertical-align: 20px
+                // style
+                color: #fff
+            &.twr:before
+                content: '\f099'
+            &.twr:hover
+                background-color: #33ccff
+            &.fb:before
+                content: '\f09a'
+            &.fb:hover
+                background-color: #3b5998
+            &.goog:before
+                content: '\f0d5'
+            &.goog:hover
+                background-color: rgb(205, 55, 23)
+        p.des
+            // posi
+            margin: .5em 0 1em 7.5em
+            // typo
+            color: #999
+            font-size: .8em
+            line-height: 1.3
+        a:link,
+        a:visited
+            color: #777
+        a:hover
+            color: #555
+        a:active
+            color: #333
+        
 
+.article .layout-wrapper.comment-and-footer
+    // posi
+    margin: 0 auto
+    position: relative
+    // box
+    min-height: 30em
+    width: 35em
+    padding: 0 0 3em
 
+.comment-and-footer footer.layout
+    // posi
+    position: absolute
+    left: -15em
+    top: 0
+    // box
+    width: 13em
+    //typo
+    color: #8a8a8a
+    font-size: .9em
 
+    h2,
+    p 
+        // posi
+        margin: .25em 0
+        // typo
+        text-align: right
+    h2
+        // posi
+        margin-top: 39px
+        // typo
+        color: darken(#66afb4, 5%)
+        font-family: $font-Minion_Pro-zh
+        font-weight: normal
+        letter-spacing: .125em
+
+        &:before
+            +psebox(3em, .75em)
+            // posi
+            margin-left: auto
+            // style
+            border-top: 2px solid #66afb4
+    a:link,
+    a:visited
+        color: #707070
+    a:hover
+        color: #555
+    a:active
+        color: #333
+        
 
 
 
