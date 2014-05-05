@@ -1,4 +1,7 @@
 
+
+@import aside
+
 .article
     // posi
     position: relative
@@ -157,22 +160,16 @@ article.layout
         font-size: 1.5em
     figure 
         // posi
-        margin: 0 !important
+        margin: 0 !important // removed margin from Han.css
         position: relative
         // box
         width: 100%
     figcaption,
     aside 
-        // posi
-        position: absolute
-        right: -10.5em
         // box
-        width: .8*12em
-        padding-top: 7px
+        padding-top: 11px
         // typo
         color: darken(#b5bebd, 7%)
-        font-size: .8em
-        text-align: left
 
         &:before
             +psebox(4em, .75em)
@@ -186,8 +183,7 @@ article.layout
             // posi
             margin: 0
             // typo
-            line-height: 1.5 !important
-            
+            line-height: 1.5 !important            
         dt 
             // typo
             font-weight: bold
@@ -197,32 +193,14 @@ article.layout
         dd
             // posi
             margin: 0
-    figcaption
-        // posi
-        left: auto
-        top: 0
-        // box
-        width: 10em
-    aside:nth-of-type(2n),
-    table.wider + aside
-        // posi
-        left: -10.5em
-
-        *
-            // typo
-            text-align: right
-        &:before
-            // posi
-            margin: -10px 0 0 auto
     table.wider + aside
         // box
-        //width: 9.6em
-        padding-top: 3.1em
+        padding-top: 3.4em
     table
         // posi
         margin: 2.5rem 0 3rem
         // typo
-        color: #444
+        color: darken(#babebe, 30%)
         font-size: .9em
         line-height: 1.7
 
@@ -321,7 +299,6 @@ article.layout
             color: #555
         a:active
             color: #333
-        
 
 .article .layout-wrapper.comment-and-footer
     // posi

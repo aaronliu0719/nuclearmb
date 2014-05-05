@@ -7,14 +7,16 @@
     
     $('article')
     .find('aside')
-    .each(function( i ) {
+    .each(function() {
         var
             $this = $( this ),
-            $p = $this.prev('p, ol, ul, blockquote, table, div'),
-            cut = $p.outerHeight() + 16
+            $p = $this.prev('p, ol, ul, blockquote, table, div')
         ;
 
-        $this.css('margin-top', -cut)
+        $p
+        .wrap('<div class="entity-w-note-aside"/>')
+        .parent()
+        .append( $this )
     })
 
 })( window, document, jQuery );
