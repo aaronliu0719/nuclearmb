@@ -36,10 +36,10 @@ $win
     }
 })
 .on('ready scroll', function() {
-    if ( $doc.scrollTop() < 40 ) {
-        $('#site-cat-menu').addClass('on')
+    if ( $doc.scrollTop() <= 10 ) {
+        $('.mobile-device #site-cat-menu').addClass('on')
     } else {
-        $('#site-cat-menu').removeClass('on')
+        $('.mobile-device #site-cat-menu').removeClass('on')
     }
 })
 
