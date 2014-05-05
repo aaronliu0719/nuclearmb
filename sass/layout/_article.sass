@@ -28,7 +28,6 @@ article.layout
             text-align: justify
         strong,
         b,
-        th,
         dt
             // typo
             font-family: inherit
@@ -42,7 +41,7 @@ article.layout
     header,
     h1
         // typo
-        color: #b5bebd
+        color: darken(#b5bebd, 7%)
         text-align: center
 
         a:link,
@@ -88,7 +87,7 @@ article.layout
             font-size: .7em
         &:hover
             // style
-            border-bottom-color: #fac759
+            border-bottom-color: rgba(#fac759, .5)
     .editor:before
         content: '編者'
     .author.and
@@ -98,8 +97,10 @@ article.layout
             // posi
             position: absolute
             // box
+            width: 1em
             // typo
             content: '·'
+            text-align: center
     time
         // box
         margin-left: 1em
@@ -203,7 +204,7 @@ article.layout
         // box
         width: 10em
     aside:nth-of-type(2n),
-    table.wide + aside
+    table.wider + aside
         // posi
         left: -10.5em
 
@@ -213,7 +214,7 @@ article.layout
         &:before
             // posi
             margin: -10px 0 0 auto
-    table.wide + aside
+    table.wider + aside
         // box
         //width: 9.6em
         padding-top: 3.1em
@@ -230,15 +231,20 @@ article.layout
             margin: 1.5rem auto 2rem
             // box
             width: 60%
-        &.wide
+        &.wider
             // box
             width: 120%
     thead
         // typo
-        color: darken(#057f87, 5%)
+        color: darken(#b5bebd, 13%)
         text-align: left
         // style
-        border-bottom: 2px solid #999
+        border-bottom: 2px solid darken(#b5bebd, 7%)
+    th 
+        // typo
+        font-weight: normal
+        // style
+        text-shadow: 1px 1px 0 #fff
     th,
     td
         // box
