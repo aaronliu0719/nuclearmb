@@ -93,7 +93,7 @@ $('article')
 
     ol
     .append(
-        $('<li class="comment"><a href="#comment">迴響</a></li>')
+        $('<li class="comment"><a href="#comment">評論</a></li>')
     )
 
     $artc
