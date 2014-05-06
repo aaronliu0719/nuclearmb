@@ -20,11 +20,12 @@ article
         figcaption
             // posi
             left: auto
+    aside
         p,
         dt, 
         dd, 
         li 
-            text-align: left
+            text-align: left !important
     .entity-w-note-aside:nth-of-type(2n) aside,
     table.wider + aside
         // posi
@@ -38,7 +39,7 @@ article
         dd, 
         li 
             // typo
-            text-align: right
+            text-align: right !important
     .sectional-anchor
         // posi
         margin-top: -.15em
@@ -104,9 +105,10 @@ nav#sectional-menu
     a:link,
     a:visited
         color: #b9b7ba
-    a:hover,
-    a:active
+    a:hover
         color: lighten(#d54354, 7%)
+    a:active
+        color: #45935a
     button
         // posi
         margin-left: 1em
@@ -162,7 +164,9 @@ nav#sectional-menu
     li a
         // box
         display: block
-        padding-bottom: .25em
+        padding: 0 0 .25em 1em
+        // typo
+        text-indent: -1.05em
     li.comment a:before
         +fawesome('\f0e5')
         // posi
@@ -176,8 +180,6 @@ nav#sectional-menu
         counter-reset: lev3 lev4 lev5
     li[data-level='3'] 
         counter-reset: lev4 lev5
-    li[data-level='4'] 
-        counter-reset: lev5
 
     li[data-level='1'] a:before
         // typo
@@ -191,14 +193,6 @@ nav#sectional-menu
         // typo
         counter-increment: lev3
         content: counter(lev1) '.' counter(lev2) '.' counter(lev3)
-    li[data-level='4'] a:before
-        // typo
-        counter-increment: lev4
-        content: counter(lev4)
-    li[data-level='5'] a:before
-        // typo
-        counter-increment: lev5
-        content: counter(lev5)
 
 
 

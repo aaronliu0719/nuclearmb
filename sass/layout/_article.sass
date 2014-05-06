@@ -116,6 +116,7 @@ article.main-content
     h4,
     h5
         & + p,
+        & + .entity-w-note-aside,
         & + ul,
         & + ol
             margin-top: -1em
@@ -146,6 +147,15 @@ article.main-content
         ul
             // box
             padding-left: 2em 
+
+        h5 
+            // posi
+            margin: 0
+            // typo
+            font-size: 1em
+        p 
+            // posi
+            margin: 0 0 .5em
     ol.reference
         // typo
         font-size: .8em
@@ -218,6 +228,8 @@ article.main-content
         dd
             // posi
             margin: 0
+    h2 + .entity-w-note-aside aside
+        margin-top: -1.05em
     table + aside
         // box
         padding-top: 3.5em
@@ -259,6 +271,11 @@ article.main-content
         // style
         border-bottom: 1px solid
         border-color: #ddd
+    td p 
+        // posi
+        margin: -.1em 0 .3em
+        // typo
+        line-height: 1.6 !important
     tr:last-child td
         border: 0
     tbody tr:hover
@@ -381,6 +398,205 @@ footer.main-content
     a:active
         color: #555
 
+        &:before
+            +psebox(4em, .75em)
+            // posi
+            margin-top: -2px
+            // style
+            border-top: 1px solid #ddd
+        p,
+        dl,
+        li
+            // posi
+            margin: 0
+            // typo
+            color: #8a8a8a
+            font-size: .8em
+            line-height: 1.5
+            text-align: left
+        dt 
+            // typo
+            font-weight: bold
+        dd + dt
+            // posi
+            margin-top: .5em
+        dd
+            // posi
+            margin: 0
+    figcaption
+        // posi
+        position: absolute
+        left: auto
+        right: -11.75em
+        top: 0
+        // box
+        width: 10em
+        // typo
+        color: #8a8a8a
+    aside:nth-of-type(2n),
+    table.wide + aside
+        // posi
+        left: -10.5em
+
+        *
+            // typo
+            text-align: right
+        &:before
+            // posi
+            margin: -10px 0 0 auto
+    table.wide + aside
+        // box
+        //width: 9.6em
+        padding-top: 2.45em
+    table
+        // posi
+        margin: 2.5rem 0 3rem
+        // typo
+        color: #444
+        font-size: .9em
+        line-height: 1.7
+
+        &.narrow
+            // posi
+            margin: 1.5rem auto 2rem
+            // box
+            width: 60%
+        &.wide
+            // box
+            width: 120%
+    thead
+        // typo
+        color: darken(#057f87, 5%)
+        text-align: left
+        // style
+        border-bottom: 2px solid #999
+    th,
+    td
+        // box
+        padding: .75em .5em
+        vertical-align: top
+        // style
+        border-bottom: 1px solid
+        border-color: #ddd
+    tr:last-child td
+        border: 0
+    tbody tr:hover
+        th,
+        td
+            background-color: rgba(#fff, .5)
+    footer
+        // posi
+        margin-top: 3em
+        position: relative
+        // style
+        border-top: 2px solid #ddd
+
+        ul
+            // posi
+            position: absolute
+            left: .25em
+            top: -.35em
+        li  
+            // posi
+            margin: 0 .125em
+            // box
+            display: inline-block
+            overflow: hidden
+            // typo
+            list-style: none
+        li button
+            // box
+            height: 1.5em
+            width: 1.5em
+            // typo
+            color: transparent !important
+            // style
+            background-color: #ccc
+            border-radius: 1.5em
+        button
+            &:before
+                +fawesome
+                // posi
+                vertical-align: 20px
+                // style
+                color: #fff
+            &.twr:before
+                content: '\f099'
+            &.twr:hover
+                background-color: #33ccff
+            &.fb:before
+                content: '\f09a'
+            &.fb:hover
+                background-color: #3b5998
+            &.goog:before
+                content: '\f0d5'
+            &.goog:hover
+                background-color: rgb(205, 55, 23)
+        p.des
+            // posi
+            margin: .5em 0 1em 7.5em
+            // typo
+            color: #999
+            font-size: .8em
+            line-height: 1.3
+        a:link,
+        a:visited
+            color: #777
+        a:hover
+            color: #555
+        a:active
+            color: #333
+        
+
+.article .layout-wrapper.comment-and-footer
+    // posi
+    margin: 0 auto
+    position: relative
+    // box
+    min-height: 30em
+    width: 35em
+    padding: 0 0 3em
+
+.comment-and-footer footer.layout
+    // posi
+    position: absolute
+    left: -15em
+    top: 0
+    // box
+    width: 13em
+    //typo
+    color: #8a8a8a
+    font-size: .9em
+
+    h2,
+    p 
+        // posi
+        margin: .25em 0
+        // typo
+        text-align: right
+    h2
+        // posi
+        margin-top: 39px
+        // typo
+        color: darken(#66afb4, 5%)
+        font-family: $font-Minion_Pro-zh
+        font-weight: normal
+        letter-spacing: .125em
+
+        &:before
+            +psebox(3em, .75em)
+            // posi
+            margin-left: auto
+            // style
+            border-top: 2px solid #66afb4
+    a:link,
+    a:visited
+        color: #707070
+    a:hover
+        color: #555
+    a:active
+        color: #333
+        
 
 
 

@@ -37,8 +37,8 @@ layout: article
     <header class="main-content">
         <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-        <a class="author and" href="{{ page.author_page }}">{{ page.author }}</a><!--
-        --><a class="editor" href="{{ page.editor_page }}">{{ page.editor }}</a><!--
+        <a class="author {% if page.editor %}and{% endif %}" href="{{ page.author_page }}">{{ page.author }}</a><!--
+        -->{% if page.editor %}<a class="editor" href="{{ page.editor_page }}">{{ page.editor }}</a>{% endif %}<!--
         --><a href="{{ page.url }}"><time datetime="{{ page.date }}">{{ page.date | date: "%Y年%m月%d日" }}</time></a>
     </header>
 

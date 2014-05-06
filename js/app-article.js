@@ -56,10 +56,10 @@ $('article')
     .text('#')
 
     $artc
-    .find('h2, h3, h4, h5, h6')
+    .find('h2, h3, h4')
     .each(function( i ) {
         var
-            elem = this.nodeName.replace(/^h([2-6])$/i, '$1'),
+            elem = this.nodeName.replace(/^h([2-4])$/i, '$1'),
             $this = $( this ),
             id = $this.attr('id'),
             title = $this.text(),
