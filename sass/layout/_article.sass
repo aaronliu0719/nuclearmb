@@ -23,6 +23,25 @@ article.layout
     font-family: $font-Gill_Sans-zh
     font-size: 18px
 
+    &
+        p,
+        li
+            // typo
+            text-align: justify
+
+            &:lang(zh)
+                line-height: 1.8
+        strong,
+        b,
+        dt
+            // typo
+            font-family: inherit
+            font-weight: 600
+    *:not(:lang(zh)):not(:lang(ja))
+        font-family: $font-Gill_Sans
+    *:not(:lang(zh)):not(:lang(ja)) *:lang(zh)
+        font-family: $font-Gill_Sans-zh
+
 header.main-content
     // typo
     color: darken(#b5bebd, 7%)
@@ -93,24 +112,6 @@ header.main-content
             content: ''
 
 article.main-content
-    &:lang(zh)
-        p,
-        li
-            // typo
-            line-height: 1.8
-            text-align: justify
-        strong,
-        b,
-        dt
-            // typo
-            font-family: inherit
-            font-weight: 600
-        strong *:not(:lang(zh)):not(:lang(ja))
-            // typo
-            font-family: $font-Gill_Sans
-    *:not(:lang(zh)):not(:lang(ja))
-        // typo
-        font-family: $font-Gill_Sans
     h2,
     h3,
     h4,
@@ -283,7 +284,7 @@ footer.main-content
             background-color: #33ccff
         &.fb:before
             content: '\f09a'
-            padding-left: .125em
+            padding-left: .1em
         &.fb:hover
             background-color: #3b5998
         &.goog:before
