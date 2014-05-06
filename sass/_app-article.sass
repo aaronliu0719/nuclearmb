@@ -1,0 +1,220 @@
+
+
+article 
+    .entity-w-note-aside,
+    figure
+        // posi
+        position: relative
+
+        aside,
+        figcaption
+            // posi
+            position: absolute
+            top: 0
+            right: -11em
+            // box
+            width: .8*12em
+            padding-top: 7px
+            // typo
+            font-size: .8em
+        figcaption
+            // posi
+            left: auto
+        p,
+        dt, 
+        dd, 
+        li 
+            text-align: left
+    .entity-w-note-aside:nth-of-type(2n) aside,
+    table.wider + aside
+        // posi
+        left: -11em
+
+        &:before
+            // posi
+            margin: 0 0 0 auto
+        p,
+        dt, 
+        dd, 
+        li 
+            // typo
+            text-align: right
+    .sectional-anchor
+        // posi
+        margin-top: -.15em
+        position: absolute
+        left: -.5em
+        // box
+        height: 1.5em
+        width: 1em
+        overflow: hidden
+        vertical-align: middle
+        // typo
+        color: transparent !important
+
+        &:before
+            +fawesome('\f13d')
+            // typo
+            color: rgba(#ddd, .3)
+            font-size: .6em
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+        &:hover .sectional-anchor:before
+            color: rgba(#fac759, .8)
+
+nav#sectional-menu
+    // posi
+    margin: 3em 0 0 -28.5em 
+    position: absolute
+    left: 50%
+    z-index: 100
+    // box
+    width: 10em
+
+    &:not(:hover)
+        button:after
+            opacity: .8
+    &.scrolled-over
+        // posi
+        margin-top: 0
+        position: fixed
+        top: 0
+
+        button
+            display: block
+        button:before
+            opacity: 1
+        ol
+            display: none
+    &.on
+        height: 100%
+
+        ol 
+            // box
+            padding-top: 2em
+            // style 
+            background-color: rgba($page-bg-color, .9)
+            border: 0
+        button:after
+            content: '\f102'
+
+    a:link,
+    a:visited
+        color: #b9b7ba
+    a:hover,
+    a:active
+        color: lighten(#d54354, 7%)
+    button
+        // posi
+        margin-left: 1em
+        position: relative
+        // box
+        display: none
+        width: 100%
+        padding: 0
+        // typo
+        color: transparent !important
+
+        &:before
+            +psebox(100%, 3px)
+            // posi
+            position: absolute
+            left: 0
+            top: 0
+            // style
+            background-color: rgba(#fac759, .6)
+        &:after
+            +psebox(1.5em, 1.5em)
+            +fawesome('\f103')
+            // posi
+            margin-left: -1em
+            position: absolute
+            left: 50%
+            top: .5em
+            // style
+            color: lighten(#d54354, 5%)
+            text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff
+    ol
+        // posi
+        margin: 0 1em 0 1em
+        // box
+        max-height: 90%
+        width: 100%
+        padding: .7em .5em .5em
+        overflow: auto
+        // typo
+        counter-reset: lev1 lev2 lev3 lev4 lev5
+        list-style: none
+        // style
+        border-bottom: 1px solid #ddd
+        border-top: 1px solid #ddd
+    li 
+        // typo
+        font-size: .8em
+    li hanla:first-child
+        display: none
+    li a:before
+        // posi
+        margin-right: .5em
+    li a
+        // box
+        display: block
+        padding-bottom: .25em
+    li.comment a:before
+        +fawesome('\f0e5')
+        // posi
+        margin-left: -.25em
+    li.comment a:hover:before
+        content: '\f075'
+
+    li[data-level='1'] 
+        counter-reset: lev2 lev3 lev4 lev5
+    li[data-level='2'] 
+        counter-reset: lev3 lev4 lev5
+    li[data-level='3'] 
+        counter-reset: lev4 lev5
+    li[data-level='4'] 
+        counter-reset: lev5
+
+    li[data-level='1'] a:before
+        // typo
+        counter-increment: lev1
+        content: counter(lev1)
+    li[data-level='2'] a:before
+        // typo
+        counter-increment: lev2
+        content: counter(lev1) '.' counter(lev2)
+    li[data-level='3'] a:before
+        // typo
+        counter-increment: lev3
+        content: counter(lev1) '.' counter(lev2) '.' counter(lev3)
+    li[data-level='4'] a:before
+        // typo
+        counter-increment: lev4
+        content: counter(lev4)
+    li[data-level='5'] a:before
+        // typo
+        counter-increment: lev5
+        content: counter(lev5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

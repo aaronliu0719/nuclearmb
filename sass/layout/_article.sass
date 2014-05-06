@@ -1,12 +1,11 @@
 
-
-@import aside
+$page-bg-color: #f7f7f7
 
 .article
     // posi
     position: relative
     // style
-    background-color: #f7f7f7
+    background-color: $page-bg-color
 
     nav.layout
         // posi
@@ -14,7 +13,7 @@
 
 article.layout
     // posi
-    top: 6em
+    top: 3em
     // box
     width: 33em
     padding: 0 .5em 10em
@@ -142,13 +141,40 @@ article.main-content
     ul
         // box
         padding-left: 0
-    .reference ol
+    
+        ol,
+        ul
+            // box
+            padding-left: 2em 
+    ol.reference
         // typo
         font-size: .8em
         text-align: left
     ul
-        // typo
-        list-style: square
+        list-style: none
+
+        > li 
+            // posi
+            position: relative
+        > li:before
+            +fawesome('\f105')
+            // posi
+            position: absolute
+            left: -1em
+            top: 0
+            // box
+            height: 100%
+            padding-top: .15em
+            // typo
+            font-size: .9em
+            vertical-align: bottom
+    ul ul,
+    ol ul 
+        > li:before
+            // posi
+            left: -1em 
+            // typo
+            content: '\f101'
     p.equation
         // posi
         margin: 1em
@@ -216,10 +242,10 @@ article.main-content
             width: 120%
     thead
         // typo
-        color: darken(#b5bebd, 13%)
+        color: darken(#c0bebd, 35%)
         text-align: left
         // style
-        border-bottom: 2px solid darken(#b5bebd, 7%)
+        border-bottom: 2px solid rgba(#fac759, .3) //darken(#b5bebd, 7%)
     th 
         // typo
         font-weight: normal
