@@ -26,8 +26,8 @@ layout: article
 {% include nav-article.html %}
 <header class="layout"></header>
 
-<article class="layout">
-    <header>
+<article class="layout main-content">
+    <header class="main-content">
         <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
         <a class="author and" href="{{ page.author_page }}">{{ page.author }}</a><!--
@@ -35,11 +35,11 @@ layout: article
         --><a href="{{ page.url }}"><time datetime="{{ page.date }}">{{ page.date | date: "%Y年%m月%d日" }}</time></a>
     </header>
     
-    <main>
+    <main class="main-content">
     {{ content }}
     </main>
 
-    <footer>
+    <footer class="main-content">
         <div class="copyright">
             <p class="des">這篇文章使用<a href="//creativecommons.org/licenses/by-sa/3.0/tw/deed.zh_TW">創用CC「姓名標示﹣相同方式分享﹣3.0﹣台灣」</a>授權條款授權，歡迎在符合上述條件的情況下分享、轉載。</p>
 

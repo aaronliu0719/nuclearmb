@@ -23,33 +23,14 @@ article.layout
     font-family: $font-Gill_Sans-zh
     font-size: 18px
 
-    &:lang(zh)
-        p,
-        li
-            // typo
-            line-height: 1.8
-            text-align: justify
-        strong,
-        b,
-        dt
-            // typo
-            font-family: inherit
-            font-weight: 600
-        strong *:not(:lang(zh)):not(:lang(ja))
-            // typo
-            font-family: $font-Gill_Sans
-    *:not(:lang(zh)):not(:lang(ja))
-        // typo
-        font-family: $font-Gill_Sans
-    header,
-    h1
-        // typo
-        color: darken(#b5bebd, 7%)
-        text-align: center
+header.main-content
+    // typo
+    color: darken(#b5bebd, 7%)
+    text-align: center
 
-        a:link,
-        a:visited
-            color: inherit
+    a:link,
+    a:visited
+        color: inherit
     h1
         // typo
         font-family: $font-article-heading-zh
@@ -110,6 +91,26 @@ article.layout
 
         &:before
             content: ''
+
+article.main-content
+    &:lang(zh)
+        p,
+        li
+            // typo
+            line-height: 1.8
+            text-align: justify
+        strong,
+        b,
+        dt
+            // typo
+            font-family: inherit
+            font-weight: 600
+        strong *:not(:lang(zh)):not(:lang(ja))
+            // typo
+            font-family: $font-Gill_Sans
+    *:not(:lang(zh)):not(:lang(ja))
+        // typo
+        font-family: $font-Gill_Sans
     h2,
     h3,
     h4,
@@ -131,9 +132,6 @@ article.layout
         font-family: $font-Minion_Pro-zh
         // style
         border-bottom: 1px solid #ddd
-    main 
-        // typo
-        //font-size: 18px
     img
         // box
         // max-height: 20em
@@ -240,68 +238,72 @@ article.layout
         th,
         td
             background-color: rgba(#fff, .5)
-    footer
-        // posi
-        margin-top: 3em
-        position: relative
-        // style
-        border-top: 2px solid #ddd
 
-        ul
+footer.main-content
+    // posi
+    margin-top: 3em
+    position: relative
+    // style
+    border-top: 2px solid #ddd
+
+    ul
+        // posi
+        position: absolute
+        left: .25em
+        top: -.35em
+    li  
+        // posi
+        margin: 0 .125em
+        // box
+        display: inline-block
+        height: 1.5em
+        width: 1.5em
+        overflow: hidden
+        // typo
+        list-style: none
+    li button
+        // box
+        height: 100%
+        width: 100%
+        // typo
+        color: transparent !important
+        // style
+        background-color: #ccc
+        border-radius: 1.5em
+    button
+        &:before
+            +fawesome
             // posi
-            position: absolute
-            left: .25em
-            top: -.35em
-        li  
-            // posi
-            margin: 0 .125em
-            // box
-            display: inline-block
-            overflow: hidden
-            // typo
-            list-style: none
-        li button
-            // box
-            height: 1.5em
-            width: 1.5em
-            // typo
-            color: transparent !important
+            vertical-align: 20px
             // style
-            background-color: #ccc
-            border-radius: 1.5em
-        button
-            &:before
-                +fawesome
-                // posi
-                vertical-align: 20px
-                // style
-                color: #fff
-            &.twr:before
-                content: '\f099'
-            &.twr:hover
-                background-color: #33ccff
-            &.fb:before
-                content: '\f09a'
-            &.fb:hover
-                background-color: #3b5998
-            &.goog:before
-                content: '\f0d5'
-            &.goog:hover
-                background-color: rgb(205, 55, 23)
-        p.des
-            // posi
-            margin: .5em 0 1em 7.5em
-            // typo
-            color: #999
-            font-size: .8em
-            line-height: 1.3
-        a:link,
-        a:visited
-            color: #777
-        a:hover
-            color: #555
-        a:active
-            color: #333
+            color: #fff
+        &.twr:before
+            content: '\f099'
+        &.twr:hover
+            background-color: #33ccff
+        &.fb:before
+            content: '\f09a'
+            padding-left: .125em
+        &.fb:hover
+            background-color: #3b5998
+        &.goog:before
+            content: '\f0d5'
+        &.goog:hover
+            background-color: rgb(205, 55, 23)
+    p.des
+        // posi
+        margin: .5em 0 1em 7.5em
+        // typo
+        color: #999
+        font-size: .8em
+        line-height: 1.3
+    a:link,
+    a:visited
+        color: #777
+    a:hover
+        color: #555
+    a:active
+        color: #333
 
 .article .layout-wrapper.comment-and-footer
     // posi
