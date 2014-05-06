@@ -3,7 +3,7 @@ timezone:   Asia/Taipei
 exclude:    ['sass', 'CNAME', 'Makefile', 'README.md']
 
 baseurl:     /
-url:         http://nuclearmb.org/
+url:         http://nuclearmb.org
 
 relative_permalinks: true
 permalink: artc/:title
