@@ -1,6 +1,6 @@
 
 
-nav.layout 
+nav.layout
     +flexbox
     +justify-content(center)
     +curve
@@ -18,7 +18,7 @@ nav.layout
 
     h1
         margin: 0
-    ul 
+    ul
         // posi
         margin: 0
         // box
@@ -27,7 +27,7 @@ nav.layout
         text-align: right
         // style
         padding: .5em 0 0
-    li 
+    li
         // posi
         margin-right: 1em
         // box
@@ -40,7 +40,7 @@ nav.layout
             margin: 0
         html.han-biaodian-pro & :not(:lang(zh)):not(:lang(ja))
             font-family: $font-Gill_Sans
-        a 
+        a
             overflow: hidden
     a:link,
     a:visited
@@ -63,12 +63,12 @@ nav.layout
     color: #c24a4a
     font-weight: bold
 
-/* 
+/*
  * iPad
  */
 @media only screen and (max-width: 999px)
     nav.layout
-        h1 
+        h1
             width: 201px
         h1 a.site-logo
             // box
@@ -105,18 +105,18 @@ nav.layout
                 color: #c24a4a
         &:hover:before
             color: #057f87
-/* 
+/*
  * Some tablets
  */
 @media only screen and (max-width: 767px)
     nav.layout
         h1
 
-/* 
+/*
  * iPhone
  */
 @media only screen and (max-width: 689px) //639px
-    nav.layout
+    .index nav.layout
         // posi
         margin: 0
         position: fixed
@@ -164,7 +164,7 @@ nav.layout
             // box
             display: block
             width: 100%
-            // typo 
+            // typo
             text-align: left
             // style
             border-bottom: 1px solid #dedede
@@ -178,28 +178,9 @@ nav.layout
             &:hover
                 background-color: #eee
                 border-top-color: #fafafa
-        ul a 
+        ul a
             // box
             display: block
             padding: .25em 1em
         ul.on
             display: block
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

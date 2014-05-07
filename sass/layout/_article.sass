@@ -67,7 +67,7 @@ header.main-content
             text-shadow: .5px .5px 0px darken(#d54354, 7%), 0 0 2px #d2ca66
         a:active
             color: darken(#d54354, 5%)
-        hanla 
+        hanla
             font-size: .4em
     .author,
     .editor,
@@ -111,6 +111,9 @@ header.main-content
             content: ''
 
 article.main-content
+    nav#sectional-menu
+        ol
+            background-color: rgba($page-bg-color, .9)
     h2,
     h3,
     h4,
@@ -142,18 +145,18 @@ article.main-content
     ul
         // box
         padding-left: 0
-    
+
         ol,
         ul
             // box
-            padding-left: 2em 
+            padding-left: 2em
 
-        h5 
+        h5
             // posi
             margin: 0
             // typo
             font-size: 1em
-        p 
+        p
             // posi
             margin: 0 0 .5em
     ol.reference
@@ -163,7 +166,7 @@ article.main-content
     ul
         list-style: none
 
-        > li 
+        > li
             // posi
             position: relative
         > li:before
@@ -179,10 +182,10 @@ article.main-content
             font-size: .9em
             vertical-align: bottom
     ul ul,
-    ol ul 
+    ol ul
         > li:before
             // posi
-            left: -1em 
+            left: -1em
             // typo
             content: '\f101'
     p.equation
@@ -193,14 +196,14 @@ article.main-content
         padding: .5em 1.5em
         // typo
         font-size: 1.5em
-    figure 
+    figure
         // posi
         margin: 0 !important // removed margin from Han.css
         position: relative
         // box
         width: 100%
     figcaption,
-    aside 
+    aside
         // box
         padding-top: 11px
         // typo
@@ -218,8 +221,8 @@ article.main-content
             // posi
             margin: 0
             // typo
-            line-height: 1.5 !important            
-        dt 
+            line-height: 1.5 !important
+        dt
             // typo
             font-weight: bold
         dd + dt
@@ -258,7 +261,7 @@ article.main-content
         text-align: left
         // style
         border-bottom: 2px solid rgba(#fac759, .3) //darken(#b5bebd, 7%)
-    th 
+    th
         // typo
         font-weight: normal
         // style
@@ -271,7 +274,7 @@ article.main-content
         // style
         border-bottom: 1px solid
         border-color: #ddd
-    td p 
+    td p
         // posi
         margin: -.1em 0 .3em
         // typo
@@ -295,7 +298,7 @@ footer.main-content
         position: absolute
         left: .25em
         top: -.35em
-    li  
+    li
         // posi
         margin: 0 .125em
         // box
@@ -349,7 +352,7 @@ footer.main-content
     a:active
         color: #333
 
-.article .layout-wrapper.comment-and-footer
+.article .layout-wrapper
     // posi
     margin: 0 auto
     position: relative
@@ -370,7 +373,7 @@ footer.main-content
     font-size: .9em
 
     h2,
-    p 
+    p
         // posi
         margin: .25em 0
         // typo
@@ -397,93 +400,6 @@ footer.main-content
         color: #336979
     a:active
         color: #555
-
-        &:before
-            +psebox(4em, .75em)
-            // posi
-            margin-top: -2px
-            // style
-            border-top: 1px solid #ddd
-        p,
-        dl,
-        li
-            // posi
-            margin: 0
-            // typo
-            color: #8a8a8a
-            font-size: .8em
-            line-height: 1.5
-            text-align: left
-        dt 
-            // typo
-            font-weight: bold
-        dd + dt
-            // posi
-            margin-top: .5em
-        dd
-            // posi
-            margin: 0
-    figcaption
-        // posi
-        position: absolute
-        left: auto
-        right: -11.75em
-        top: 0
-        // box
-        width: 10em
-        // typo
-        color: #8a8a8a
-    aside:nth-of-type(2n),
-    table.wide + aside
-        // posi
-        left: -10.5em
-
-        *
-            // typo
-            text-align: right
-        &:before
-            // posi
-            margin: -10px 0 0 auto
-    table.wide + aside
-        // box
-        //width: 9.6em
-        padding-top: 2.45em
-    table
-        // posi
-        margin: 2.5rem 0 3rem
-        // typo
-        color: #444
-        font-size: .9em
-        line-height: 1.7
-
-        &.narrow
-            // posi
-            margin: 1.5rem auto 2rem
-            // box
-            width: 60%
-        &.wide
-            // box
-            width: 120%
-    thead
-        // typo
-        color: darken(#057f87, 5%)
-        text-align: left
-        // style
-        border-bottom: 2px solid #999
-    th,
-    td
-        // box
-        padding: .75em .5em
-        vertical-align: top
-        // style
-        border-bottom: 1px solid
-        border-color: #ddd
-    tr:last-child td
-        border: 0
-    tbody tr:hover
-        th,
-        td
-            background-color: rgba(#fff, .5)
     footer
         // posi
         margin-top: 3em
@@ -496,7 +412,7 @@ footer.main-content
             position: absolute
             left: .25em
             top: -.35em
-        li  
+        li
             // posi
             margin: 0 .125em
             // box
@@ -546,9 +462,9 @@ footer.main-content
             color: #555
         a:active
             color: #333
-        
 
-.article .layout-wrapper.comment-and-footer
+
+.article .layout-wrapper
     // posi
     margin: 0 auto
     position: relative
@@ -569,7 +485,7 @@ footer.main-content
     font-size: .9em
 
     h2,
-    p 
+    p
         // posi
         margin: .25em 0
         // typo
@@ -596,22 +512,235 @@ footer.main-content
         color: #555
     a:active
         color: #333
-        
+
+/**
+ * iPad
+ */
+@media screen and (max-width: 1023px)
+    article.layout,
+    .article .layout-wrapper
+        // posi
+        margin-left: -350px
+        left: 50%
+        // box
+        width: 27em
+
+    article.main-content
+        header h1
+            font-size: 1.7em
+
+        nav#sectional-menu
+            // posi
+            margin-left: 0
+            margin-right: -23.3em
+            left: auto
+            right: 50%
+
+            &.scrolled-over
+                margin-right: -17.2em
+        p.equation
+            padding: .25em .5em
+
+    .article .comment-and-footer
+        // box
+        width: 30.4em
+
+        footer.layout
+            left: auto
+            right: -15em
+
+            h2,
+            p
+                // typo
+                text-align: left
+            h2:before
+                margin-left: 0
+                margin-right: auto
+
+/**
+ * Some tablets
+ */
+@media screen and (max-width: 767px)
+    article.layout,
+    .article .layout-wrapper
+        // posi
+        margin-left: auto
+        left: auto
+        // box
+        width: 29em
+
+    article.main-content
+        nav#sectional-menu
+            // posi
+            margin-left: 0
+            margin-right: 0
+            position: relative
+            left: auto
+            right: auto
+            float: right
+
+            &.scrolled-over
+                margin-left: 0
+                margin-right: 0
+                position: fixed
+                right: 3em
+                top: 0
+        h2:first-of-type
+            // posi
+            clear: both
+        table.wider
+            // box
+            width: 110%
+        .entity-w-note-aside aside,
+        figure figcaption
+            // posi
+            margin: -1em 0 0
+            position: relative
+            left: 0
+            // box
+            width: 45%
+        .entity-w-note-aside table + aside
+            margin-top: -1.5em
+            padding-top: 0
+
+    .article .comment-and-footer
+        // box
+        width: 32em
+
+        footer.layout
+            // posi
+            position: relative
+            left: auto
+            right: auto
+
+            h2
+                // posi
+                position: absolute
+                right: -110px
+                top: -30px
+            div.about
+                // posi
+                margin: 2em 0 3em
+                position: relative
+                right: 120px
+                // box
+                width: 20em
+
+/**
+ * iPhone
+ */
+@media screen and (max-width: 639px)
+    .article nav.layout
+        // +decurve
+        border-radius: 0
+        // posi
+        position: fixed
+        // box
+        height: 55px
 
 
+        h1
+            margin-top: -4px
+            padding: 0
+
+    article.layout,
+    .article .layout-wrapper
+        // posi
+        margin: 0 auto
+
+        // box
+        max-width: 25em
+        width: 100%
 
 
+    article.main-content
+        // box
+        padding: 3em 1em 10em
+        // typo
+        font-size: 16px
 
+        nav#sectional-menu
+            // posi
+            margin: 1.3em 0 1.5em 0
+            left: auto
+            right: auto
+            float: none
+            // box
+            width: 90%
+            padding: 0
 
+            li
+                // typo
+                font-size: 1em
+            &.scrolled-over
+                // posi
+                margin: 0
+                left: 0
+                top: 52px
+                z-index: 120
+                // box
+                width: 100%
+                padding: 0
 
+            &.on
+                height: auto
+                ol
+                    margin: 0
+                    padding: .5em .5em .75em 2em
+                    border-top: 2px solid #ddd
+                li a
+                    // typo
+                    color: #837e7f
+            button
+                // posi
+                margin: 0
+                // box
+                display: none
+                height: auto
+            &.on button
+                // box
+                display: block
 
+                &:after
+                    // posi
+                    margin-top: 5px
+                    // style
+                    background-color: lighten(#d54354, 5%)
+                    border-radius: 1.5em
+                    color: #fff
+                    text-shadow: none
+        header
+            // typo
+            text-align: left
+        p
+            line-height: 1.7 !important
+        ol,
+        ul
+            // box
+            padding-left: 1em
+        ol.reference
+            // typo
+            font-size: .9em
 
+            li
+                // typo
+                text-align: left !important
+        table.narrow
+            // box
+            width: 100% !important
+        table.wider
+            // box
+            width: 100% !important
+            overflow-y: auto
+        .sectional-anchor
+            display: none
 
+    footer.main-content
+        ul
+            display: none
+        p.des
+            margin-left: 0
 
-
-
-
-
-
-
-
+    .article .comment-and-footer footer
+        // box
+        display: none

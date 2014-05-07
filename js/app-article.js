@@ -39,7 +39,7 @@ $('article')
  * Bookmarks for headings
  */
 ~function() {
-    var 
+    var
         a = $('<a/>'),
         anchor = a.clone(),
         ol = $('<ol/>'),
@@ -73,7 +73,7 @@ $('article')
 
         // anchors beside headings
         $this
-        .prepend( 
+        .prepend(
             anchor.clone()
             .attr('href', '#' + id)
             .text( level )
@@ -98,7 +98,7 @@ $('article')
 
     $artc
     .find('header.main-content')
-    .after( 
+    .after(
         $('<nav id="sectional-menu" class="main-content" />')
         .append( ol )
         .append( $('<button id="section-menu-switch">段落選單開關</button>') )
@@ -139,10 +139,34 @@ $('article')
 }()
 
 /**
+ * Sectional menu switch for mobile devices
+ */
+~function() {
+    var
+        $body = $('body')
+    ;
+
+    $doc
+    .on('click', '.mobile-device a.site-logo', function( ev ) {
+        ev.preventDefault()
+        $('#section-menu-switch').trigger('click')
+    })
+
+    $win
+    .on('ready resize', function() {
+        if ( $win.width() < 640 ) {
+            $body.addClass('mobile-device')
+        } else {
+            $body.removeClass('mobile-device')
+        }
+    })
+}()
+
+/**
  * Share buttons init
  */
 ~function() {
-    var 
+    var
         service = [],
         url = encodeURIComponent( window.location.href )
     ;
@@ -167,4 +191,3 @@ $('article')
 }()
 
 })( window, document, jQuery );
-

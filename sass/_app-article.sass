@@ -26,20 +26,6 @@ article
         dd,
         li
             text-align: left !important
-    .entity-w-note-aside:nth-of-type(2n) aside,
-    table.wider + aside
-        // posi
-        left: -11em
-
-        &:before
-            // posi
-            margin: 0 0 0 auto
-        p,
-        dt,
-        dd,
-        li
-            // typo
-            text-align: right !important
     .sectional-anchor
         // posi
         margin-top: -.15em
@@ -65,6 +51,26 @@ article
     h6
         &:hover .sectional-anchor:before
             color: rgba(#fac759, .8)
+
+/**
+ * Wider screen
+ */
+@media screen and (min-width: 1024px)
+    article
+        .entity-w-note-aside:nth-of-type(2n) aside,
+        table.wider + aside
+            // posi
+            left: -11em
+
+            &:before
+                // posi
+                margin: 0 0 0 auto
+            p,
+            dt,
+            dd,
+            li
+                // typo
+                text-align: right !important
 
 nav#sectional-menu
     // posi
@@ -97,7 +103,6 @@ nav#sectional-menu
             // box
             padding-top: 2em
             // style
-            background-color: rgba($page-bg-color, .9)
             border: 0
         button:after
             content: '\f102'

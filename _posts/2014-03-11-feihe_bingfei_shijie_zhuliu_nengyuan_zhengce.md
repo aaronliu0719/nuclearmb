@@ -188,7 +188,7 @@ image: /assets/radiation-protect.png
 <table id="table-2" class="narrow longer">
 <style scoped>
 #table-2 {
-    width: 80% !important;
+    width: 80%;
 }
 
 #table-2 th:first-child {
