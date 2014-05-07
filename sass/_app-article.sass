@@ -1,6 +1,6 @@
 
 
-article 
+article
     .entity-w-note-aside,
     figure
         // posi
@@ -22,9 +22,9 @@ article
             left: auto
     aside
         p,
-        dt, 
-        dd, 
-        li 
+        dt,
+        dd,
+        li
             text-align: left !important
     .entity-w-note-aside:nth-of-type(2n) aside,
     table.wider + aside
@@ -35,9 +35,9 @@ article
             // posi
             margin: 0 0 0 auto
         p,
-        dt, 
-        dd, 
-        li 
+        dt,
+        dd,
+        li
             // typo
             text-align: right !important
     .sectional-anchor
@@ -68,7 +68,7 @@ article
 
 nav#sectional-menu
     // posi
-    margin: 3em 0 0 -28.5em 
+    margin: 3em 0 0 -28.5em
     position: absolute
     left: 50%
     z-index: 100
@@ -93,10 +93,10 @@ nav#sectional-menu
     &.on
         height: 100%
 
-        ol 
+        ol
             // box
             padding-top: 2em
-            // style 
+            // style
             background-color: rgba($page-bg-color, .9)
             border: 0
         button:after
@@ -145,7 +145,7 @@ nav#sectional-menu
         // box
         max-height: 90%
         width: 100%
-        padding: .7em .5em .5em
+        padding: .7em 0em .5em .75em
         overflow: auto
         // typo
         counter-reset: lev1 lev2 lev3 lev4 lev5
@@ -153,7 +153,7 @@ nav#sectional-menu
         // style
         border-bottom: 1px solid #ddd
         border-top: 1px solid #ddd
-    li 
+    li
         // typo
         font-size: .8em
     li hanla:first-child
@@ -164,21 +164,29 @@ nav#sectional-menu
     li a
         // box
         display: block
-        padding: 0 0 .25em 1em
+        padding: 0 .2em .25em .8em
         // typo
         text-indent: -1.05em
+    li[data-level='2'] a
+        // typo
+        text-indent: -1.75em
+    li[data-level='3']
+        padding-left: .75em
+    li[data-level='3'] a
+        // typo
+        text-indent: -2.45em
     li.comment a:before
         +fawesome('\f0e5')
         // posi
-        margin-left: -.25em
+        margin-left: -.5em
     li.comment a:hover:before
         content: '\f075'
 
-    li[data-level='1'] 
+    li[data-level='1']
         counter-reset: lev2 lev3 lev4 lev5
-    li[data-level='2'] 
+    li[data-level='2']
         counter-reset: lev3 lev4 lev5
-    li[data-level='3'] 
+    li[data-level='3']
         counter-reset: lev4 lev5
 
     li[data-level='1'] a:before
@@ -193,22 +201,3 @@ nav#sectional-menu
         // typo
         counter-increment: lev3
         content: counter(lev1) '.' counter(lev2) '.' counter(lev3)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

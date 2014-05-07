@@ -6,21 +6,3 @@ all ::
 
 jade ::
 	jade -Pw *.jade | sass --watch sass:.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
