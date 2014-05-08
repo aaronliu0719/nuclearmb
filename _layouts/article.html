@@ -101,6 +101,13 @@ var disqus_shortname = 'nuclearmb';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
-
+<!--
+  Dataimg optimisation
+  ***
+  * Render the layout without large
+  * style-images in the very beginning,
+  * then dataimg after most things are loaded.
+-->
+<style>@import url({{ site.baseurl }}dataimg.css);</style>
 </body>
 </html>
