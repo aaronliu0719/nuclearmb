@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,UAAU,CAEN,UAAU,CAAE,uv/DAAuv/D,CACnw/D,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,sBAAsB,CAI7B,0CAAE,CAGE,OAAO,CAAE,cAAc,CAC3B,0DAAU,CAEN,gBAAgB,CAAE,uk7EAAuk7E,CAOzl7E,oCAAgB,CACZ,OAAO,CAAE,25EAA25E",
+"sources": ["sass/dataimg.sass"],
+"names": [],
+"file": "dataimg.css"
+}

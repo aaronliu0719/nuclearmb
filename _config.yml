@@ -5,6 +5,6 @@ exclude:    ['sass', 'CNAME', 'Makefile', 'README.md']
 baseurl:     /
 url:         http://nuclearmb.org
 
-relative_permalinks: true
+#relative_permalinks: true
 permalink: artc/:title
 markdown: kramdown
